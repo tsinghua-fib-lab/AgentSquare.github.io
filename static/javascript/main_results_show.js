@@ -6,8 +6,8 @@ let taskScores_save = null;
 let currentTask = 'Avg';
 const sortby_options = {
     BY_REWARD_SCORE: "sort-by-reward-score",
-    BY_SUCCESS_RATE: "sort-by-success-rate",
-    BY_GROUNDING_ACC: "sort-by-grounding-acc",
+    // BY_SUCCESS_RATE: "sort-by-success-rate",
+    // BY_GROUNDING_ACC: "sort-by-grounding-acc",
 };
 let cur_sortby_option = sortby_options.BY_REWARD_SCORE;
 
@@ -128,8 +128,8 @@ function getScoresForTask(rawData, task) {
             return {
                 model: model.model,
                 score: parseFloat(model.tasks[task].score),
-                accuracy: parseFloat(model.tasks[task].accuracy),
-                grounding: parseFloat(model.tasks[task].grounding)
+                // accuracy: parseFloat(model.tasks[task].accuracy),
+                // grounding: parseFloat(model.tasks[task].grounding)
             };
         } else {
             console.error("Task not found:", task);
@@ -148,11 +148,13 @@ function createMainResultChart() {
 
     if (cur_sortby_option === sortby_options.BY_REWARD_SCORE) {
         taskScores.sort((a, b) => b.score - a.score);
-    } else if (cur_sortby_option === sortby_options.BY_SUCCESS_RATE) {
-        taskScores.sort((a, b) => b.accuracy - a.accuracy);
-    } else if (cur_sortby_option === sortby_options.BY_GROUNDING_ACC) {
-        taskScores.sort((a, b) => b.grounding - a.grounding);
-    }
+    } 
+    // else if (cur_sortby_option === sortby_options.BY_SUCCESS_RATE) {
+    //     taskScores.sort((a, b) => b.accuracy - a.accuracy);
+    // } 
+    // else if (cur_sortby_option === sortby_options.BY_GROUNDING_ACC) {
+    //     taskScores.sort((a, b) => b.grounding - a.grounding);
+    // }
     taskScores_save = taskScores
 
     const labels = taskScores.map(item => item.model);
@@ -176,16 +178,16 @@ function createMainResultChart() {
                     data: scores,
                     backgroundColor: '#f398ae',
                 },
-                {
-                    label: 'Success Rate',
-                    data: accuracies,
-                    backgroundColor: '#78b5f1',
-                },
-                {
-                    label: 'Grounding Accuracy',
-                    data: groundings,
-                    backgroundColor: '#f3e276',
-                }
+                // {
+                //     label: 'Success Rate',
+                //     data: accuracies,
+                //     backgroundColor: '#78b5f1',
+                // },
+                // {
+                //     label: 'Grounding Accuracy',
+                //     data: groundings,
+                //     backgroundColor: '#f3e276',
+                // }
 
             ]
         },
@@ -294,19 +296,20 @@ function createMainResultChart() {
     let datasets = [];
     let yAxisTitle = '';
     const lineGraphCtx = document.getElementById('line-graph').getContext('2d');
-    if (cur_sortby_option === sortby_options.BY_SUCCESS_RATE) {
-        datasets = rawData.map(modelData => {
-            return {
-                label: modelData.model,
-                data: subTaskLabels.map(subtask => modelData.tasks[subtask] ?
-                    parseFloat(modelData.tasks[subtask].accuracy) : null),
-                borderColor: modelColors[modelData.model] || '#4CAF50',
-                fill: false,
-                ...borderStyles[modelData.model]
-            };
-        });
-        yAxisTitle = 'Success Rate (%)';
-    } else if (cur_sortby_option === sortby_options.BY_REWARD_SCORE) {
+    // if (cur_sortby_option === sortby_options.BY_SUCCESS_RATE) {
+    //     datasets = rawData.map(modelData => {
+    //         return {
+    //             label: modelData.model,
+    //             data: subTaskLabels.map(subtask => modelData.tasks[subtask] ?
+    //                 parseFloat(modelData.tasks[subtask].accuracy) : null),
+    //             borderColor: modelColors[modelData.model] || '#4CAF50',
+    //             fill: false,
+    //             ...borderStyles[modelData.model]
+    //         };
+    //     });
+    //     yAxisTitle = 'Success Rate (%)';
+    // } 
+    if (cur_sortby_option === sortby_options.BY_REWARD_SCORE) {
         datasets = rawData.map(modelData => {
             return {
                 label: modelData.model,
@@ -318,19 +321,20 @@ function createMainResultChart() {
             };
         });
         yAxisTitle = 'Progress Rate (%)';
-    } else if (cur_sortby_option === sortby_options.BY_GROUNDING_ACC) {
-        datasets = rawData.map(modelData => {
-            return {
-                label: modelData.model,
-                data: subTaskLabels.map(subtask => modelData.tasks[subtask] ?
-                    parseFloat(modelData.tasks[subtask].grounding) : null),
-                borderColor: modelColors[modelData.model] || '#4CAF50',
-                fill: false,
-                ...borderStyles[modelData.model]
-            };
-        });
-        yAxisTitle = 'Grounding accuracy (%)';
-    }
+    } 
+    // else if (cur_sortby_option === sortby_options.BY_GROUNDING_ACC) {
+    //     datasets = rawData.map(modelData => {
+    //         return {
+    //             label: modelData.model,
+    //             data: subTaskLabels.map(subtask => modelData.tasks[subtask] ?
+    //                 parseFloat(modelData.tasks[subtask].grounding) : null),
+    //             borderColor: modelColors[modelData.model] || '#4CAF50',
+    //             fill: false,
+    //             ...borderStyles[modelData.model]
+    //         };
+    //     });
+    //     yAxisTitle = 'Grounding accuracy (%)';
+    // }
     lineGraph = new Chart(lineGraphCtx, {
         type: 'line',
         data: {
@@ -474,8 +478,9 @@ function createAnnotations(modelName) {
         let content = `${modelData.model} (success rate):\n`;
         if (cur_sortby_option === sortby_options.BY_REWARD_SCORE) {
             content = `${modelData.model} (progress rate):\n`
-        } else if (cur_sortby_option === sortby_options.BY_GROUNDING_ACC) {
-            content = `${modelData.model} (grounding acc):\n`
+        } 
+        // else if (cur_sortby_option === sortby_options.BY_GROUNDING_ACC) {
+        //     content = `${modelData.model} (grounding acc):\n`
         }
         let focus_score = null
         let avg_content = `${modelData.model}(%):\n`
@@ -484,11 +489,12 @@ function createAnnotations(modelName) {
         taskSubtaskMapping[currentTask].forEach(subtask => {
             if (modelData.tasks && modelData.tasks[subtask] && cur_sortby_option === sortby_options.BY_SUCCESS_RATE) {
                 focus_score = parseFloat(modelData.tasks[subtask].accuracy);
-            } else if (modelData.tasks && modelData.tasks[subtask] && cur_sortby_option === sortby_options.BY_REWARD_SCORE) {
-                focus_score = parseFloat(modelData.tasks[subtask].score);
-            } else if (modelData.tasks && modelData.tasks[subtask] && cur_sortby_option === sortby_options.BY_GROUNDING_ACC) {
-                focus_score = parseFloat(modelData.tasks[subtask].grounding);
-            }
+            } 
+            // else if (modelData.tasks && modelData.tasks[subtask] && cur_sortby_option === sortby_options.BY_REWARD_SCORE) {
+            //     focus_score = parseFloat(modelData.tasks[subtask].score);
+            // } else if (modelData.tasks && modelData.tasks[subtask] && cur_sortby_option === sortby_options.BY_GROUNDING_ACC) {
+            //     focus_score = parseFloat(modelData.tasks[subtask].grounding);
+            // }
             minYValue = Math.min(minYValue, focus_score);
             maxYValue = Math.max(maxYValue, focus_score);
             if (maxYValue === 0) {
