@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result | AgentBoard: An Analytical Evaluation Board of Multi-Turn LLM Agents</title>
+    <link rel="icon" href="img/icon/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/leaderboard.css">
+    <script src="javascript/slider_bar.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+    <script src="javascript/reward_vs_steps.js" type="module"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NV0BT2WTBM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-NV0BT2WTBM');
+    </script>
+</head>
+
+<body>
+<div id="sidebar-toggle">☰</div>
+<div id="sidebar">
+    <a href="#main-performance">Main Performance</a>
+    <a href="#dimensional-analysis">Dimensional Analysis</a>
+    <a href="#reward-step-analysis">Long-range interaction</a>
+    <a href="#difficulty-analysis">Difficulty Analysis</a>
+</div>
+
+
+<div id="nav">
+    <div id="icon">
+        <img src="img/icon/logo.png" id="nav-icon" alt="AgentBoard">
+        <a class="nav-button-main" href="../index.html#home"
+           style="margin-left: 2px; font-size: 22px">AgentBoard
+        </a>
+    </div>
+    <div>
+        <a class="nav-button" href="../index.html#home">
+            <img src="img/icon/home_icon.png" alt="Home">Home</a>
+        <a class="nav-button" href="leaderboard.html">
+            <img src="img/icon/leaderboard_icon.png" alt="Result">Result</a>
+        <a class="nav-button" href="explore.html">
+            <img src="img/icon/explore_icon.png" alt="Explore">Explore</a>
+    </div>
+</div>
+
+<div id="body">
+    <br><br>
+    <!--    <button id="save-png-button">save image</button>-->
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>-->
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>-->
+    <div class="section">
+        <h1>Result</h1>
+        <p style="font-size: 17px">
+            We conduct a comprehensive, multi-turn LLM agent evaluation of popular large language models, including both
+            API-based proprietary models and open-weight models. This analytical evaluation is designed to deeply
+            analyze
+            the performance through
+            <span class="important">main results</span>, <span class="important">dimension score</span>,
+            <span class="important">long-range interaction</span>, and <span class="important">performance at easy/hard levels</span>.
+        </p>
+        <h2 id="main-performance">Main Performance</h2>
+        <p>
+            <strong>Dataset Statistics:</strong> We categorize the nine tasks into four distinct categories: <span
+                class="important">Embodied AI</span>, <span class="important">Games</span>, <span
+                class="important">Web</span>, and <span class="important">Tools</span>.
+            Under Embodied AI, we include <span class="important">Alfworld</span>, <span class="important">ScienceWorld
+            </span>, and <span class="important">BabyAI</span>; the Game category contains
+            <span class="important">Jericho</span> and <span class="important">PDDL</span>;
+            the Web category encompasses <span class="important">WebShop</span> and <span
+                class="important">WebArena</span>;
+            for Tools, we include <span class="important">Tool-Query</span>
+            and <span class="important">Tool-Operation</span>.<br>
+            <strong>Evaluation metrics:</strong> We introduce two primary metrics for evaluation: <span
+                class="important">success rate</span> and <span class="important">progress rate</span>. The
+            <span class="important">success rate</span> measures the proportion of instances in which the goal of an
+            environment is achieved. The <span class="important">progress rate</span> reflects the proportion of
+            completed sub-goals. In addition to these, we incorporate <span class="important">grounding accuracy</span>
+            as a fundamental metric in assessing agent performance, which quantifies the percentage of valid actions
+            taken in each task.
+        </p>
+        <!--        <h3>API-based Commercial LLMs</h3>-->
+        <div class="text-center btn-group">
+            <div class="btn-group btn-switch task-filter-selector" data-toggle="buttons">
+                <button type="button" class="btn btn-container" disabled>Filter by Task:</button>
+                <button type="button" class="btn btn-container active" id="filter-by-Avg">Avg</button>
+                <button type="button" class="btn btn-container" id="filter-by-Embodied">Embodied AI</button>
+                <button type="button" class="btn btn-container" id="filter-by-Game">Game</button>
+                <button type="button" class="btn btn-container" id="filter-by-Web">Web</button>
+                <button type="button" class="btn btn-container" id="filter-by-Tools">Tools</button>
+            </div>
+            <div class="btn-group btn-switch metric-filter-selector" data-toggle="buttons">
+                <button type="button" class="btn btn-container" disabled>Sort
+                    by:
+                </button>
+                <button type="button" class="btn btn-container active"
+                        id="sort-by-reward-score">
+                    Progress Rate
+                </button>
+
+                <button type="button" class="btn btn-container"
+                        id="sort-by-success-rate">
+                    Success Rate
+                </button>
+
+                <button type="button" class="btn btn-container"
+                        id="sort-by-grounding-acc">
+                    Grounding Accuracy
+                </button>
+            </div>
+        </div>
+        <div style="display: flex; width: 96%">
+            <div class="chart-container" style="flex: 1; min-width: 0;">
+                <canvas id="chart-success-reward-rate" width="520" height="500"
+                        style="display: block; box-sizing: border-box; height: 480px; width: 500px;">
+                </canvas>
+            </div>
+            <div class="line-graph-container" style="flex: 1; min-width: 0;">
+                <canvas id="line-graph" width="500" height="520"></canvas>
+            </div>
+        </div>
+        <h2 id="dimensional-analysis">Dimensional Analysis</h2>
+        <!--        默认显示6个模型，怕太杂乱了-->
+        <p class="leaderboard_p">Our dimension scoring framework evaluates a model's capability
+            across six dimensions: <span class="important">memory</span>, <span class="important">planning</span>, <span
+                    class="important">world modeling</span>,
+            <span class="important">retrospection</span>,
+            <span class="important">grounding</span>, and <span class="important">spatial navigation</span>.
+            <br>
+            <span class="important">Memory</span> measures incorporating long-range information in context, <span
+                    class="important">planning</span> assesses decomposing complex goals into
+            manageable sub-goals, <span class="important">world modeling</span> tests knowledge necessary for task
+            completion, <span class="important">retrospection</span> captures the ability to use environmental feedback,
+            <span class="important">grounding</span> focuses on competency in generating valid actions, and <span
+                    class="important">spatial navigation</span> represents efficiency in moving to a
+            target location).
+        <div class="left-right-panel">
+            <div id="content-left">
+                <ul>
+                    <li><strong>GPT-4</strong> exhibits superior performance across all dimensions,
+                        significantly surpassing other LLMs.
+                    </li>
+                    <li>Generally, <strong>proprietary LLMs</strong> outperform <strong>open-weight
+                        models</strong> comprehensively and exhibit balanced abilities.
+                    </li>
+                    <li><strong>Open-weight LLMs</strong> exhibit weaknesses in <strong>self-reflection</strong>,
+                        <strong>world modeling</strong>, and <strong>planning</strong>.
+                    </li>
+                </ul>
+            </div>
+            <div class="content-center">
+                <div class="radar-chart-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+                <script src="javascript/dimension_analysis.js"></script>
+            </div>
+        </div>
+        </p>
+
+
+        <h2 id="reward-step-analysis">Long-range Interaction</h2>
+        <p>
+            One important characteristic of LLM agents is <span class="important">their ability to engage
+            in multi-round interactions</span>, allowing them to continuously gather information and make progress.
+            Here shows how the models <span class="important">proceed across long-range interactions</span>.
+            Specifically, we calculate the progress rate relative to the number of interaction steps.<br>
+            We observe that <strong>proprietary models</strong>(i.e. GPT-4, Claude2 and GPT-3.5-Turbo) <strong>continue
+            to gain
+            rewards across 30 steps</strong> in tasks of <strong>Alfworld</strong> and <strong>PDDL</strong>. In
+            contrast, in <strong>WebArena</strong> and <strong>Tool</strong>,
+            they rapidly reach a peak reward value and then cease to gain further rewards. This trend may be due to the
+            fact that tasks in Embodied AI and Games generally <strong>require more steps to complete</strong>.<br>
+            For <strong>open-weight models</strong>, they quickly reach their peak progress rate. As the number of steps
+            increases, they
+            fail to continue gaining rewards in all tasks and most of them
+<!--            except <strong>DeepSeek-67b</strong> -->
+            stop making progresses after around 6 steps.
+            This phenomenon suggests that these models may be <strong>limited in handling long-range
+            interactions</strong>.
+            Longer interaction steps increase reasoning complexity and require extended context length, which can pose
+            challenges for these models.
+            As a result, their ability to solve complex tasks that involve long-range interactions may be limited.
+
+        </p>
+        <script src="javascript/main_results_show.js" type="module"></script>
+
+        <div class="panel">
+            <div class="top-menu">
+                <div class="text-center btn-group">
+                    <div class="btn-group btn-switch task-filter-selector-for-rewards" data-toggle="buttons">
+                        <button type="button" class="btn btn-container" disabled>Filter by Task:</button>
+                        <button type="button" class="btn btn-container active" id="task-filter-Avg">Avg</button>
+                        <button type="button" class="btn btn-container" id="task-filter-Embodied">Embodied</button>
+                        <button type="button" class="btn btn-container" id="task-filter-Game">Game</button>
+                        <button type="button" class="btn btn-container" id="task-filter-Web">Web</button>
+                        <button type="button" class="btn btn-container" id="task-filter-Tools">Tools</button>
+                    </div>
+                </div>
+                <div class="text-center btn-sub-group">
+                    <div class="btn-group btn-switch sub-task-filter-selector-for-rewards" data-toggle="buttons">
+                        <button type="button" class="btn btn-container" disabled>Filter by sub-task:</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-panel">
+                <canvas id="rewardChart"></canvas>
+            </div>
+        </div>
+        <h2 id="difficulty-analysis">Difficulty Analysis</h2>
+        <p>
+            For each of the task, we divide the environments into <span class="important">"easy"</span> and <span
+                class="important">"hard"</span> two categories. These environments are divided according to the <span
+                class="important">task
+            types</span> or the <span class="important">number of sub-goals</span>.
+            <br>Notably, even with a minor difference in task complexity (for some tasks,
+            easy samples consisting of fewer than 3 sub-goals, and hard samples predominantly comprising 4-6 sub-goals).
+            all models suffer from significant average performance drop on hard examples, with <strong>GPT4 success rate
+            experiencing an
+            average drop of 31.2%</strong>, which indicated that even the most robust Language Learning Models (LLM)
+            such as GPT-4 are <strong>limited in terms of task compositionality</strong>.
+        </p>
+        <div class="panel">
+            <div class="top-menu-long">
+                <div class="text-center btn-group">
+                    <div class="btn-group btn-switch task-filter-selector-for-difficulty" data-toggle="buttons">
+                        <button type="button" class="btn btn-container" disabled>Filter by category:</button>
+                        <button type="button" class="btn btn-container active" id="difficulty-tasks-filter-Avg">Avg
+                        </button>
+                        <button type="button" class="btn btn-container" id="difficulty-tasks-filter-AlfWorld">AlfWorld
+                        </button>
+                        <button type="button" class="btn btn-container" id="difficulty-tasks-filter-ScienceWorld">
+                            ScienceWorld
+                        </button>
+                        <button type="button" class="btn btn-container" id="difficulty-tasks-filter-BabyAI">BabyAI
+                        </button>
+                        <button type="button" class="btn btn-container" id="difficulty-tasks-filter-Jericho">Jericho
+                        </button>
+                        <button type="button" class="btn btn-container" id="difficulty-tasks-filter-PDDL">PDDL
+                        </button>
+                        <button type="button" class="btn btn-container" id="difficulty-tasks-filter-WebShop">WebShop
+                        </button>
+                        <button type="button" class="btn btn-container" id="difficulty-tasks-filter-WebArena">WebArena
+                        </button>
+                        <button type="button" class="btn btn-container" id="difficulty-tasks-filter-Tool-Query">Tool-qa
+                        </button>
+                        <button type="button" class="btn btn-container" id="difficulty-tasks-filter-Tool-Operation">
+                            Tool-operator
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="charts-panel">
+                <div class="left-chart-panel">
+                    <div class="text-center btn-sub-group">
+                        <div class="btn-group btn-switch sort-by-button" data-toggle="buttons">
+                            <button type="button" class="btn btn-container" disabled>Sort by:</button>
+                            <button type="button" class="btn btn-container" id="sort-by-reward-score-easy">Progress Rate
+                                (Easy)
+                            </button>
+                            <button type="button" class="btn btn-container" id="sort-by-reward-score-hard">Progress Rate
+                                (Hard)
+                            </button>
+                            <button type="button" class="btn btn-container" id="sort-by-reward-score-gap">Progress Rate
+                                (Diff)
+                            </button>
+                        </div>
+                    </div>
+                    <canvas id="difficulty_score_Chart"></canvas>
+                </div>
+                <div class="right-chart-panel">
+                    <div class="text-center btn-sub-group">
+                        <div class="btn-group btn-switch sort-by-button" data-toggle="buttons">
+                            <button type="button" class="btn btn-container" disabled>Sort by:</button>
+                            <button type="button" class="btn btn-container" id="sort-by-accuracy-score-easy">Success
+                                Rate
+                                (Easy)
+                            </button>
+                            <button type="button" class="btn btn-container" id="sort-by-accuracy-score-hard">Success
+                                Rate
+                                (Hard)
+                            </button>
+                            <button type="button" class="btn btn-container" id="sort-by-accuracy-score-gap">Success Rate
+                                (Diff)
+                            </button>
+                        </div>
+                    </div>
+                    <canvas id="difficulty_acc_Chart"></canvas>
+                </div>
+            </div>
+            <script src="javascript/difficulty_analysis.js"></script>
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>

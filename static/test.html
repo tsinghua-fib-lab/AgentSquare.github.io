@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent-Eval: Fine-grained Evaluation of Multi-turn LLM Agents in Challenging Environments</title>
+    <link rel="icon" href="static/img/icon/logo.png" type="image/icon type">
+    <!-- 指定文档的图标，将显示在浏览器的标签页和书签上。 -->
+    <link rel="stylesheet" href="static/css/main.css">
+    <!--    # 引入名为"main_zh.css"的CSS样式表，用于设置文档的主要样式。-->
+    <link rel="stylesheet" href="static/css/nav.css">
+    <!--    # 引入名为"nav.css"的CSS样式表，用于设置文档的导航栏样式。-->
+</head>
+
+<body>
+
+<strong>&gt; open door to kitchen</strong><br><span style="white-space:pre-wrap;">The door is already open.</span>
+<br><br><strong>&gt; go to kitchen</strong><br><span style="white-space:pre-wrap;">You move to the kitchen.</span>
+<br><br><strong>&gt; look around</strong><br><span style="white-space:pre-wrap;">This room is called the kitchen. In it, you see:\n\tthe agent\n\ta sink, which is turned off. In the sink is: nothing.\n\ta freezer. The freezer door is closed.\n\ta substance called air\n\ta stopwatch, which is deactivated.\n\ta counter. On the counter is: a bowl (containing a banana, an orange, a potato, a red apple), a drawer.\n\ta oven, which is turned off. The oven door is closed.\n\ta cupboard. The cupboard door is closed.\n\ta glass jar (containing a substance called sodium chloride)\n\ta chair. On the chair is: nothing.\n\ta thermometer, currently reading a temperature of 10 degrees celsius\n\ta painting\n\ta stove, which is turned off. On the stove is: nothing.\n\ta substance called soap\n\ta lighter\n\ta fridge. The fridge door is closed.\n\ta table. On the table is: a glass cup (containing nothing).\nYou also see:\n\tA door to the hallway (that is open)\n\tA door to the bathroom (that is open)\n\tA door to the outside (that is open)</span>
+<br><br><strong>&gt; pick up thermometer</strong><br><span style="white-space:pre-wrap;">You move the thermometer to the inventory.</span>
+<br><br><strong>&gt; open cupboard</strong><br><span style="white-space: pre-wrap;">The cupboard is now open.</span>
+<br><br><strong>&gt; pick up metal pot</strong><br><span style="white-space:pre-wrap;">You move the metal pot to the inventory.</span><br>
+<br><strong>&gt; look around</strong><br><span style="white-space:pre-wrap;">This room is called the kitchen. In it, you see:
+    the agent
+    a sink, which is turned off. In the sink is: nothing.\n\ta freezer. The freezer door is closed.\n\ta substance
+called air\n\ta stopwatch, which is deactivated.\n\ta counter. On the counter is: a bowl (containing a banana, an
+orange, a potato, a red apple), a drawer.\n\ta oven, which is turned off. The oven door is closed.\n\ta cupboard. The
+cupboard door is open. In the cupboard is: a ceramic cup (containing nothing), a drawer, a tin cup (containing
+nothing).\n\ta glass jar (containing a substance called sodium chloride)\n\ta chair. On the chair is: nothing.\n\ta
+painting\n\ta stove, which is turned off. On the stove is: nothing.\n\ta substance called soap\n\ta lighter\n\ta fridge.
+The fridge door is closed.\n\ta table. On the table is: a glass cup (containing nothing).\nYou also see:\n\tA door to
+the hallway (that is open)\n\tA door to the bathroom (that is open)\n\tA door to the outside (that is open)</span>
+<br><br><strong>&gt; move metal pot to sink</strong><br><span style="white-space:pre-wrap;">You move the metal pot to the sink.</span><br>
+<br><strong>&gt; activate sink</strong><br><span style="white-space: pre-wrap;">The sink is now activated.</span><br>
+<br><strong>&gt; deactivate sink</strong><br><span style="white-space: pre-wrap;">The sink is now deactivated.</span>
+<br><br><strong>&gt; pick up metal pot</strong><br><span style="white-space:pre-wrap;">You move the metal pot to the inventory.</span><br>
+<br><strong>&gt; focus on substance in metal pot</strong><br><span style="white-space: pre-wrap;">You focus on the water.</span><br><br>
+<strong>&gt; pour metal pot into metal pot</strong><br><span style="white-space:pre-wrap;">You can't move something into itself.</span>
+<br><br><strong>&gt; pick up metal pot</strong><br><span style="white-space:pre-wrap;">You move the metal pot to the inventory.</span><br>
+<br><strong>&gt; open freezer</strong><br><span style="white-space: pre-wrap;">The freezer is now open.</span><br><br>
+<strong>&gt; move metal pot to freezer</strong><br><span style="white-space:pre-wrap;">You move the metal pot to the freezer.</span><br>
+<br><strong>&gt; examine substance in metal pot</strong><br><span style="white-space:pre-wrap;">a substance called water</span><br><br>
+<strong>&gt; use thermometer in inventory on substance in metal pot</strong><br><span style="white-space:pre-wrap;">the thermometer
+measures a temperature of 10 degrees celsius</span>
+<br><br><strong>&gt; wait</strong><br><span style="white-space:pre-wrap;">You decide to wait for 10 iterations.</span><br><br><strong>&gt;
+    examine substance in metal pot</strong><br><span style="white-space: pre-wrap;">a substance called water</span>
+<br><br><strong>&gt; use thermometer in inventory on substance in metal pot</strong><br><span style="white-space:pre-wrap;">the
+thermometer measures a temperature of 3 degrees celsius</span>
+<br><br><strong>&gt; wait</strong><br><span style="white-space: pre-wrap;">You decide to wait for 10 iterations.</span><strong style="color: darkgreen;"> (Task Completed) </strong><br><br><strong>&gt; examine ice</strong><br><span
+        style="white-space: pre-wrap;">a substance called ice</span><strong style="color:darkgreen;"> (Task
+    Completed) </strong>
+<br><br><strong>&gt; use thermometer in inventory on ice</strong><br><span style="white-space: pre-wrap;">the thermometer measures a
+temperature of -4 degrees celsius</span>
+<strong style="color: darkgreen;"> (Task Completed) </strong><br><br><strong>&gt; wait</strong><br><span
+        style="white-space: pre-wrap;">You decide to wait for 10 iterations.</span><strong style="color: darkgreen;">
+    (Task
+    Completed) </strong>
+<br><br><strong>&gt; wait1</strong><br><span
+        style="white-space:pre-wrap;">You decide to wait for 1 iterations.</span><strong style="color: darkgreen;">
+    (Task Completed) </strong>
+
+</body>
+
+
