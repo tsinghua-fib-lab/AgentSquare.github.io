@@ -520,7 +520,7 @@
         }
     },
     {
-        "model": "Random",
+        "model": "Random Search",
         "tasks": {
             "Webshop": {
                 "score": "53.3%",
@@ -560,7 +560,7 @@
         }
     },
     {
-        "model": "Bayesian",
+        "model": "Bayesian Search",
         "tasks": {
             "Webshop": {
                 "score": "54.9%",
