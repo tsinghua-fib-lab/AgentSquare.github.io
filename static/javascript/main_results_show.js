@@ -231,7 +231,7 @@ function createMainResultChart() {
                     },
                     title: {
                         display: true,
-                        text: 'Model',
+                        text: 'Agent',
                         font: {
                             size: 14,
                             family: "'Noto Sans', sans-serif",
