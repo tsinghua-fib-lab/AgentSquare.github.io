@@ -143,7 +143,7 @@
                 "grounding": "80.3%"
             },
             "TravelPlanner": {
-                "score": "41.3%",
+                "score": "0%",
                 "accuracy": "15.1%",
                 "grounding": "97.6%"
             },
@@ -153,7 +153,7 @@
                 "grounding": "100.0%"
             },
             "Avg": {
-                "score": "50.8%",
+                "score": "43.97%",
                 "accuracy": "26.2%",
                 "grounding": "73.9%"
             }
@@ -188,12 +188,12 @@
                 "grounding": "97.6%"
             },
             "PDDL": {
-                "score": "48.6%",
+                "score": "47.6%",
                 "accuracy": "35.0%",
                 "grounding": "100.0%"
             },
             "Avg": {
-                "score": "50.0%",
+                "score": "49.8%",
                 "accuracy": "26.2%",
                 "grounding": "73.9%"
             }
@@ -223,7 +223,7 @@
                 "grounding": "80.3%"
             },
             "TravelPlanner": {
-                "score": "43.8%",
+                "score": "0%",
                 "accuracy": "15.1%",
                 "grounding": "97.6%"
             },
@@ -233,7 +233,7 @@
                 "grounding": "100.0%"
             },
             "Avg": {
-                "score": "38.9%",
+                "score": "31.45%",
                 "accuracy": "26.2%",
                 "grounding": "73.9%"
             }
@@ -248,7 +248,7 @@
                 "grounding": "98.5%"
             },
             "ALFWorld": {
-                "score": "44.0%",
+                "score": "40.4%",
                 "accuracy": "61.7%",
                 "grounding": "93.0%"
             },
@@ -273,7 +273,7 @@
                 "grounding": "100.0%"
             },
             "Avg": {
-                "score": "45.8%",
+                "score": "45.22%",
                 "accuracy": "26.2%",
                 "grounding": "73.9%"
             }
@@ -338,7 +338,7 @@
                 "grounding": "82.6%"
             },
             "M3Tool": {
-                "score": "44.7%",
+                "score": "24.7%",
                 "accuracy": "56.2%",
                 "grounding": "80.3%"
             },
@@ -353,7 +353,7 @@
                 "grounding": "100.0%"
             },
             "Avg": {
-                "score": "49.2%",
+                "score": "45.82%",
                 "accuracy": "26.2%",
                 "grounding": "73.9%"
             }
@@ -388,12 +388,12 @@
                 "grounding": "97.6%"
             },
             "PDDL": {
-                "score": "53.5%",
+                "score": "55.3%",
                 "accuracy": "35.0%",
                 "grounding": "100.0%"
             },
             "Avg": {
-                "score": "51.0%",
+                "score": "51.3%",
                 "accuracy": "26.2%",
                 "grounding": "73.9%"
             }
@@ -413,12 +413,12 @@
                 "grounding": "93.0%"
             },
             "SciWorld": {
-                "score": "69.5%",
+                "score": "74.0%",
                 "accuracy": "43.3%",
                 "grounding": "82.6%"
             },
             "M3Tool": {
-                "score": "47.8%",
+                "score": "27.8%",
                 "accuracy": "56.2%",
                 "grounding": "80.3%"
             },
@@ -433,7 +433,7 @@
                 "grounding": "100.0%"
             },
             "Avg": {
-                "score": "54.0%",
+                "score": "51.48%",
                 "accuracy": "26.2%",
                 "grounding": "73.9%"
             }
@@ -458,7 +458,7 @@
                 "grounding": "82.6%"
             },
             "M3Tool": {
-                "score": "47.5%",
+                "score": "32.2%",
                 "accuracy": "56.2%",
                 "grounding": "80.3%"
             },
@@ -473,7 +473,7 @@
                 "grounding": "100.0%"
             },
             "Avg": {
-                "score": "55.9%",
+                "score": "53.42%",
                 "accuracy": "26.2%",
                 "grounding": "73.9%"
             }
@@ -528,7 +528,7 @@
                 "grounding": "98.5%"
             },
             "ALFWorld": {
-                "score": "62.3%",
+                "score": "62.0%",
                 "accuracy": "61.7%",
                 "grounding": "93.0%"
             },
@@ -548,12 +548,12 @@
                 "grounding": "97.6%"
             },
             "PDDL": {
-                "score": "60.0%",
+                "score": "66.0%",
                 "accuracy": "35.0%",
                 "grounding": "100.0%"
             },
             "Avg": {
-                "score": "57.7%",
+                "score": "58.63%",
                 "accuracy": "47.9%",
                 "grounding": "85.6%"
             }
