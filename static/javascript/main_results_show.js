@@ -156,7 +156,7 @@ function createMainResultChart() {
             labels: labels,
             datasets: [
                 {
-                    label: 'Progress Rate',
+                    label: 'Performance',
                     data: scores,
                     backgroundColor: '#f398ae',
                 }
