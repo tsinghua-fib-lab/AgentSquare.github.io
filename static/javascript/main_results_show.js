@@ -10,7 +10,7 @@ const sortby_options = {
 let cur_sortby_option = sortby_options.BY_REWARD_SCORE;
 
 const taskSubtaskMapping = {
-    'Avg': ['AlfWorld', 'ScienceWorld', 'BabyAI', 'PDDL', 'Jericho', 'WebShop', 'WebArena', 'Tool-Query', 'Tool-Operation'],
+    'Avg': ['Webshop', 'ALFWorld', 'SciWorld', 'M3Tool', 'TravelPlanner', 'PDDL'],
     'Embodied': ['AlfWorld', 'ScienceWorld', 'BabyAI'],
     'Game': ['PDDL', 'Jericho'],
     'Web': ['WebShop', 'WebArena'],
