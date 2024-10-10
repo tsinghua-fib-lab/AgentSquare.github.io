@@ -6,8 +6,8 @@ let taskScores_save = null;
 let currentTask = 'Avg';
 const sortby_options = {
     BY_REWARD_SCORE: "sort-by-reward-score",
-    // BY_SUCCESS_RATE: "sort-by-success-rate",
-    // BY_GROUNDING_ACC: "sort-by-grounding-acc",
+    BY_SUCCESS_RATE: "sort-by-success-rate",
+    BY_GROUNDING_ACC: "sort-by-grounding-acc",
 };
 let cur_sortby_option = sortby_options.BY_REWARD_SCORE;
 
@@ -481,7 +481,7 @@ function createAnnotations(modelName) {
         } 
         // else if (cur_sortby_option === sortby_options.BY_GROUNDING_ACC) {
         //     content = `${modelData.model} (grounding acc):\n`
-        }
+        // }
         let focus_score = null
         let avg_content = `${modelData.model}(%):\n`
         let minYValue = 100;
