@@ -97,11 +97,30 @@
             <button type="button" class="btn btn-container" id="filter-by-TravelPlanner">TravelPlanner</button>
             <button type="button" class="btn btn-container" id="filter-by-PDDL">PDDL</button>
         </div>
+        <div class="btn-group btn-switch metric-filter-selector metric-filter-selector-index" data-toggle="buttons">
+            <button type="button" class="btn btn-container" disabled>Sort
+                by:
+            </button>
+            <button type="button" class="btn btn-container active"
+                    id="sort-by-reward-score">
+                Progress Rate
+            </button>
+
+            <button type="button" class="btn btn-container"
+                    id="sort-by-success-rate">
+                Success Rate
+            </button>
+
+            <button type="button" class="btn btn-container"
+                    id="sort-by-grounding-acc">
+                Grounding Accuracy
+            </button>
+        </div>
     </div>
     <div style="display: flex; justify-content: center; width: 100%;">
         <!-- 第一个图表容器 -->
-        <div class="chart-container" style="width: 600px; height: 500px;">
-            <canvas id="chart-success-reward-rate" width="600" height="500"></canvas>
+        <div class="chart-container" style="width: 750px; height: 640px;">
+            <canvas id="chart-success-reward-rate" width="520" height="500"></canvas>
         </div>
     </div>
 </div>
