@@ -1,0 +1,57 @@
+[
+    {
+        "model": "GPT-4",
+        "dimensions": {
+            "Memory": 0.4770625,
+            "Planning": 0.46514999999999995,
+            "World Modeling": 0.4324444444444444,
+            "Self-Reflection": 0.4726470588235294,
+            "Grounding": 0.488304347826087,
+            "Spatial Navigation": 0.4519999999999999
+        }
+    },
+    {
+        "model": "Claude2",
+        "dimensions": {
+            "Memory": 0.26568749999999997,
+            "Planning": 0.2605,
+            "World Modeling": 0.214,
+            "Self-Reflection": 0.2842941176470588,
+            "Grounding": 0.2925217391304348,
+            "Spatial Navigation": 0.24350000000000002
+        }
+    },
+    {
+        "model": "GPT-3.5-Turbo",
+        "dimensions": {
+            "Memory": 0.1603125,
+            "Planning": 0.16919999999999996,
+            "World Modeling": 0.15944444444444444,
+            "Self-Reflection": 0.17982352941176472,
+            "Grounding": 0.19347826086956518,
+            "Spatial Navigation": 0.17742857142857146
+        }
+    },
+    {
+        "model": "GPT-3.5-Turbo-16k",
+        "dimensions": {
+            "Memory": 0.12475000000000001,
+            "Planning": 0.12484999999999999,
+            "World Modeling": 0.09861111111111111,
+            "Self-Reflection": 0.12111764705882354,
+            "Grounding": 0.14295652173913045,
+            "Spatial Navigation": 0.1192142857142857
+        }
+    },
+    {
+        "model": "Text-Davinci-003",
+        "dimensions": {
+            "Memory": 0.158375,
+            "Planning": 0.1532,
+            "World Modeling": 0.1213888888888889,
+            "Self-Reflection": 0.1418235294117647,
+            "Grounding": 0.17108695652173916,
+            "Spatial Navigation": 0.13514285714285715
+        }
+    }
+]

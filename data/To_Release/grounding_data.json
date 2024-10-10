@@ -1,0 +1,211 @@
+[
+    {
+        "model": "GPT4-8k",
+        "tasks": {
+            "Alfworld": "82.6%",
+            "Scienceworld": "82.6%",
+            "Baybai": "82.6%",
+            "Embodied": "82.6%",
+            "Jericho": "100.0%",
+            "pddl": "93.0%",
+            "Game": "96.5%",
+            "webshop": "98.3%",
+            "webarena": "97.6%",
+            "web": "97.9%",
+            "Tool-qa": "97.5%",
+            "Tool-operator": "98.2%",
+            "tools": "97.9%",
+            "avg": "92.5%"
+        }
+    },
+    {
+        "model": "Claude2-100k",
+        "tasks": {
+            "Alfworld": "57.4%",
+            "Scienceworld": "11.2%",
+            "Baybai": "61.6%",
+            "Embodied": "43.4%",
+            "Jericho": "98.2%",
+            "pddl": "71.2%",
+            "Game": "84.7%",
+            "webshop": "95.9%",
+            "webarena": "83.9%",
+            "web": "89.9%",
+            "Tool-qa": "93.7%",
+            "Tool-operator": "92.3%",
+            "tools": "93.0%",
+            "avg": "73.9%"
+        }
+    },
+    {
+        "model": "ChatGPT3.5-4k",
+        "tasks": {
+            "Alfworld": "59.2%",
+            "Scienceworld": "18.7%",
+            "Baybai": "62.4%",
+            "Embodied": "46.8%",
+            "Jericho": "99.8%",
+            "pddl": "66.0%",
+            "Game": "82.9%",
+            "webshop": "90.2%",
+            "webarena": "91.3%",
+            "web": "90.7%",
+            "Tool-qa": "97.6%",
+            "Tool-operator": "83.1%",
+            "tools": "90.4%",
+            "avg": "74.3%"
+        }
+    },
+    {
+        "model": "GPT3.5-16k",
+        "tasks": {
+            "Alfworld": "57.4%",
+            "Scienceworld": "9.2%",
+            "Baybai": "73.3%",
+            "Embodied": "46.6%",
+            "Jericho": "100.0%",
+            "pddl": "77.6%",
+            "Game": "88.8%",
+            "webshop": "96.6%",
+            "webarena": "81.3%",
+            "web": "89.0%",
+            "Tool-qa": "97.9%",
+            "Tool-operator": "98.8%",
+            "tools": "98.4%",
+            "avg": "76.9%"
+        }
+    },
+    {
+        "model": "text-davinci-003-4k",
+        "tasks": {
+            "Alfworld": "27.30%",
+            "Scienceworld": "17.2%",
+            "Baybai": "15.9%",
+            "Embodied": "20.1%",
+            "Jericho": "97.9%",
+            "pddl": "72.6%",
+            "Game": "85.3%",
+            "webshop": "97.4%",
+            "webarena": "23.7%",
+            "web": "60.5%",
+            "Tool-qa": "95.2%",
+            "Tool-operator": "77.0%",
+            "tools": "86.1%",
+            "avg": "58.2%"
+        }
+    },
+    {
+        "model": "llama2-13b-4k",
+        "tasks": {
+            "Alfworld": "8.9%",
+            "Scienceworld": "8.6%",
+            "Baybai": "37.4%",
+            "Embodied": "18.3%",
+            "Jericho": "99.5%",
+            "pddl": "56.7%",
+            "Game": "78.1%",
+            "webshop": "9.1%",
+            "webarena": "79.2%",
+            "web": "44.1%",
+            "Tool-qa": "87.0%",
+            "Tool-operator": "44.9%",
+            "tools": "66.0%",
+            "avg": "47.9%"
+        }
+    },
+    {
+        "model": "llama2-70b-4k",
+        "tasks": {
+            "Alfworld": "20.8%",
+            "Scienceworld": "3.0%",
+            "Baybai": "42.3%",
+            "Embodied": "22.0%",
+            "Jericho": "96.7%",
+            "pddl": "30.6%",
+            "Game": "63.6%",
+            "webshop": "59.3%",
+            "webarena": "93.6%",
+            "web": "76.5%",
+            "Tool-qa": "96.1%",
+            "Tool-operator": "80.4%",
+            "tools": "88.3%",
+            "avg": "58.1%"
+        }
+    },
+    {
+        "model": "codellama-13b-16k",
+        "tasks": {
+            "Alfworld": "15.8%",
+            "Scienceworld": "8.6%",
+            "Baybai": "34.6%",
+            "Embodied": "19.7%",
+            "Jericho": "99.7%",
+            "pddl": "17.8%",
+            "Game": "58.8%",
+            "webshop": "78.0%",
+            "webarena": "82.1%",
+            "web": "80.1%",
+            "Tool-qa": "90.5%",
+            "Tool-operator": "68.4%",
+            "tools": "79.5%",
+            "avg": "55.1%"
+        }
+    },
+    {
+        "model": "codellama-34b-16k",
+        "tasks": {
+            "Alfworld": "8.4%",
+            "Scienceworld": "9.0%",
+            "Baybai": "28.0%",
+            "Embodied": "15.1%",
+            "Jericho": "97.3%",
+            "pddl": "43.6%",
+            "Game": "70.5%",
+            "webshop": "98.3%",
+            "webarena": "96.8%",
+            "web": "97.5%",
+            "Tool-qa": "97.5%",
+            "Tool-operator": "82.3%",
+            "tools": "89.9%",
+            "avg": "62.4%"
+        }
+    },
+    {
+        "model": "vicuna-13b-16k",
+        "tasks": {
+            "Alfworld": "17.2%",
+            "Scienceworld": "24.1%",
+            "Baybai": "74.5%",
+            "Embodied": "38.6%",
+            "Jericho": "100.0%",
+            "pddl": "59.2%",
+            "Game": "79.6%",
+            "webshop": "94.1%",
+            "webarena": "58.7%",
+            "web": "76.4%",
+            "Tool-qa": "97.9%",
+            "Tool-operator": "93.9%",
+            "tools": "95.9%",
+            "avg": "68.8%"
+        }
+    },
+    {
+        "model": "lemur-70b-chat",
+        "tasks": {
+            "Alfworld": "15.7%",
+            "Scienceworld": "47.8%",
+            "Baybai": "44.6%",
+            "Embodied": "36.0%",
+            "Jericho": "97.7%",
+            "pddl": "31.0%",
+            "Game": "64.3%",
+            "webshop": "84.0%",
+            "webarena": "19.1%",
+            "web": "51.5%",
+            "Tool-qa": "96.50%",
+            "Tool-operator": "95.6%",
+            "tools": "96.1%",
+            "avg": "59.1%"
+        }
+    }
+]

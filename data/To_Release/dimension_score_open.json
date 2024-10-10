@@ -1,0 +1,90 @@
+[
+    {
+        "model": "GPT-3.5-Turbo",
+        "dimensions": {
+            "Memory": 0.1603125,
+            "Planning": 0.16919999999999996,
+            "World Modeling": 0.15944444444444444,
+            "Self-Reflection": 0.17982352941176472,
+            "Grounding": 0.19347826086956518,
+            "Spatial Navigation": 0.17742857142857146
+        }
+    },
+    {
+        "model": "Llama2-13b",
+        "dimensions": {
+            "Memory": 0.018125000000000002,
+            "Planning": 0.026000000000000002,
+            "World Modeling": 0.023555555555555555,
+            "Self-Reflection": 0.029411764705882353,
+            "Grounding": 0.026782608695652178,
+            "Spatial Navigation": 0.028857142857142856
+        }
+    },
+    {
+        "model": "Llama2-70b",
+        "dimensions": {
+            "Memory": 0.030625,
+            "Planning": 0.0417,
+            "World Modeling": 0.0405,
+            "Self-Reflection": 0.05064705882352941,
+            "Grounding": 0.043260869565217394,
+            "Spatial Navigation": 0.047571428571428584
+        }
+    },
+    {
+        "model": "CodeLlama-13b",
+        "dimensions": {
+            "Memory": 0.09793750000000001,
+            "Planning": 0.097,
+            "World Modeling": 0.07433333333333333,
+            "Self-Reflection": 0.09247058823529414,
+            "Grounding": 0.11382608695652176,
+            "Spatial Navigation": 0.08978571428571429
+        }
+    },
+    {
+        "model": "CodeLlama-34b",
+        "dimensions": {
+            "Memory": 0.0674375,
+            "Planning": 0.0703,
+            "World Modeling": 0.05316666666666667,
+            "Self-Reflection": 0.07158823529411763,
+            "Grounding": 0.08169565217391304,
+            "Spatial Navigation": 0.06328571428571428
+        }
+    },
+    {
+        "model": "Vicuna-13b-16k",
+        "dimensions": {
+            "Memory": 0.032375,
+            "Planning": 0.040400000000000005,
+            "World Modeling": 0.03177777777777778,
+            "Self-Reflection": 0.04552941176470589,
+            "Grounding": 0.04765217391304348,
+            "Spatial Navigation": 0.03621428571428571
+        }
+    },
+    {
+        "model": "Lemur-70b",
+        "dimensions": {
+            "Memory": 0.074375,
+            "Planning": 0.0681,
+            "World Modeling": 0.04955555555555555,
+            "Self-Reflection": 0.05988235294117647,
+            "Grounding": 0.08256521739130435,
+            "Spatial Navigation": 0.05921428571428571
+        }
+    },
+    {
+        "model": "DeepSeek-67b",
+        "dimensions": {
+            "Memory": 0.1613125,
+            "Planning": 0.15075,
+            "World Modeling": 0.13916666666666666,
+            "Self-Reflection": 0.16476470588235292,
+            "Grounding": 0.18339130434782608,
+            "Spatial Navigation": 0.15278571428571427
+        }
+    }
+]

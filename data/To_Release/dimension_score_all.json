@@ -1,0 +1,145 @@
+[
+    {
+        "model": "Mistral-7b",
+        "dimensions": {
+            "Memory": 2.6951600693398206,
+            "Planning": 3.5676249251360566,
+            "World Modeling": 3.127620238002239,
+            "Self-reflection": 3.9269800569239486,
+            "Grounding": 3.950099007210713,
+            "Spatial Navigation": 3.772459847152672
+        }
+    },
+    {
+        "model": "GPT-3.5-Turbo",
+        "dimensions": {
+            "Memory": 16.90858950775906,
+            "Planning": 17.619145368301727,
+            "World Modeling": 17.11335519487241,
+            "Self-reflection": 18.801643073038615,
+            "Grounding": 20.260684187633753,
+            "Spatial Navigation": 18.74314229864311
+        }
+    },
+    {
+        "model": "CodeLlama-13b",
+        "dimensions": {
+            "Memory": 9.465178598458376,
+            "Planning": 9.173511214945794,
+            "World Modeling": 6.8577950436374335,
+            "Self-reflection": 8.632900685238262,
+            "Grounding": 10.92728986234421,
+            "Spatial Navigation": 8.235054143067028
+        }
+    },
+    {
+        "model": "Text-Davinci-003",
+        "dimensions": {
+            "Memory": 15.838590895243946,
+            "Planning": 15.317595349471578,
+            "World Modeling": 12.132855230477182,
+            "Self-reflection": 14.169572065940937,
+            "Grounding": 17.104361464969003,
+            "Spatial Navigation": 13.508006870994153
+        }
+    },
+    {
+        "model": "GPT-3.5-Turbo-16k",
+        "dimensions": {
+            "Memory": 12.478873532674054,
+            "Planning": 12.490616374991456,
+            "World Modeling": 9.863653990664073,
+            "Self-reflection": 12.116378572598094,
+            "Grounding": 14.297610970518859,
+            "Spatial Navigation": 11.924693636575928
+        }
+    },
+    {
+        "model": "Llama2-70b",
+        "dimensions": {
+            "Memory": 3.0565371143105518,
+            "Planning": 4.168076399852919,
+            "World Modeling": 4.047274086605035,
+            "Self-reflection": 5.062727713431808,
+            "Grounding": 4.325826651412599,
+            "Spatial Navigation": 4.757182343541142
+        }
+    },
+    {
+        "model": "Vicuna-13b-16k",
+        "dimensions": {
+            "Memory": 3.2361189865036417,
+            "Planning": 4.035703195273868,
+            "World Modeling": 3.185685749460501,
+            "Self-reflection": 4.559333078933342,
+            "Grounding": 4.768456842264143,
+            "Spatial Navigation": 3.626460078392222
+        }
+    },
+    {
+        "model": "DeepSeek-67b",
+        "dimensions": {
+            "Memory": 16.11899539552829,
+            "Planning": 15.063226576335364,
+            "World Modeling": 13.908318500518554,
+            "Self-reflection": 16.46442346731389,
+            "Grounding": 18.32750277717071,
+            "Spatial Navigation": 15.270988090198838
+        }
+    },
+    {
+        "model": "CodeLlama-34b",
+        "dimensions": {
+            "Memory": 6.747633697366084,
+            "Planning": 7.034715286483268,
+            "World Modeling": 5.314359938209954,
+            "Self-reflection": 7.161734646882479,
+            "Grounding": 8.17472564284704,
+            "Spatial Navigation": 6.327983686275163
+        }
+    },
+    {
+        "model": "Llama2-13b",
+        "dimensions": {
+            "Memory": 1.4455888181966015,
+            "Planning": 2.0068196601349704,
+            "World Modeling": 1.6321900606192012,
+            "Self-reflection": 2.2409162868334587,
+            "Grounding": 2.212755013663182,
+            "Spatial Navigation": 1.9527574831867864
+        }
+    },
+    {
+        "model": "GPT-4",
+        "dimensions": {
+            "Memory": 47.70799835526071,
+            "Planning": 46.514423252601674,
+            "World Modeling": 43.242631115861016,
+            "Self-reflection": 47.26001500479282,
+            "Grounding": 48.8335403216668,
+            "Spatial Navigation": 45.19710821124266
+        }
+    },
+    {
+        "model": "Lemur-70b",
+        "dimensions": {
+            "Memory": 8.053865306280885,
+            "Planning": 7.303519583290691,
+            "World Modeling": 5.503594426346913,
+            "Self-reflection": 6.380252324909668,
+            "Grounding": 8.68518843791204,
+            "Spatial Navigation": 6.392683524251678
+        }
+    },
+    {
+        "model": "Claude2",
+        "dimensions": {
+            "Memory": 25.442415365781603,
+            "Planning": 24.746362571509746,
+            "World Modeling": 20.089453054087056,
+            "Self-reflection": 27.045660051100974,
+            "Grounding": 28.01509422278132,
+            "Spatial Navigation": 22.664339258527537
+        }
+    }
+]
