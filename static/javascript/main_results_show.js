@@ -202,7 +202,7 @@ function createMainResultChart() {
                     },
                     title: {
                         display: true,
-                        text: 'Model',
+                        text: 'Method',
                         font: {
                             size: 14,
                             family: "'Noto Sans', sans-serif",
