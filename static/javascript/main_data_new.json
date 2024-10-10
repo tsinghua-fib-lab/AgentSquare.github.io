@@ -2,50 +2,35 @@
     {
         "model": "AgentSquare",
         "tasks": {
-            "Tool-Operation": {
-                "score": "80.8%",
+            "Webshop": {
+                "score": "60.7%",
                 "accuracy": "60.0%",
                 "grounding": "98.5%"
             },
-            "PDDL": {
-                "score": "81.2%",
+            "ALFWorld": {
+                "score": "69.5%",
                 "accuracy": "61.7%",
                 "grounding": "93.0%"
             },
-            "AlfWorld": {
+            "SciWorld": {
                 "score": "65.5%",
                 "accuracy": "43.3%",
                 "grounding": "82.6%"
             },
-            "BabyAI": {
+            "M3Tool": {
                 "score": "70.7%",
                 "accuracy": "56.2%",
                 "grounding": "80.3%"
             },
-            "WebArena": {
+            "TravelPlanner": {
                 "score": "39.4%",
                 "accuracy": "15.1%",
                 "grounding": "97.6%"
             },
-            "Jericho": {
+            "PDDL": {
                 "score": "52.4%",
                 "accuracy": "35.0%",
                 "grounding": "100.0%"
-            },
-            "Tool-Query": {
-                "score": "85.1%",
-                "accuracy": "68.3%",
-                "grounding": "97.5%"
-            },
-            "WebShop": {
-                "score": "76.5%",
-                "accuracy": "39.0%",
-                "grounding": "98.3%"
-            },
-            "ScienceWorld": {
-                "score": "78.8%",
-                "accuracy": "52.2%",
-                "grounding": "22.8%"
             },
             "Embodied": {
                 "score": "71.7%",
