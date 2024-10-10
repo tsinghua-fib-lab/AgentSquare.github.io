@@ -1,0 +1,977 @@
+[
+    {
+        "model": "GPT-4",
+        "tasks": {
+            "Tool-Operation": {
+                "score": "80.8%",
+                "accuracy": "60.0%",
+                "grounding": "98.5%"
+            },
+            "PDDL": {
+                "score": "81.2%",
+                "accuracy": "61.7%",
+                "grounding": "93.0%"
+            },
+            "AlfWorld": {
+                "score": "65.5%",
+                "accuracy": "43.3%",
+                "grounding": "82.6%"
+            },
+            "BabyAI": {
+                "score": "70.7%",
+                "accuracy": "56.2%",
+                "grounding": "80.3%"
+            },
+            "WebArena": {
+                "score": "39.4%",
+                "accuracy": "15.1%",
+                "grounding": "97.6%"
+            },
+            "Jericho": {
+                "score": "52.4%",
+                "accuracy": "35.0%",
+                "grounding": "100.0%"
+            },
+            "Tool-Query": {
+                "score": "85.1%",
+                "accuracy": "68.3%",
+                "grounding": "97.5%"
+            },
+            "WebShop": {
+                "score": "76.5%",
+                "accuracy": "39.0%",
+                "grounding": "98.3%"
+            },
+            "ScienceWorld": {
+                "score": "78.8%",
+                "accuracy": "52.2%",
+                "grounding": "22.8%"
+            },
+            "Embodied": {
+                "score": "71.7%",
+                "accuracy": "50.6%",
+                "grounding": "61.9%"
+            },
+            "Game": {
+                "score": "66.8%",
+                "accuracy": "48.4%",
+                "grounding": "96.5%"
+            },
+            "Web": {
+                "score": "58.0%",
+                "accuracy": "27.1%",
+                "grounding": "97.9%"
+            },
+            "Tools": {
+                "score": "82.9%",
+                "accuracy": "64.2%",
+                "grounding": "98.0%"
+            },
+            "Avg": {
+                "score": "70.0%",
+                "accuracy": "47.9%",
+                "grounding": "85.6%"
+            }
+        }
+    },
+    {
+        "model": "Claude2",
+        "tasks": {
+            "PDDL": {
+                "score": "61.4%",
+                "accuracy": "40.0%",
+                "grounding": "71.2%"
+            },
+            "AlfWorld": {
+                "score": "34.1%",
+                "accuracy": "24.6%",
+                "grounding": "57.4%"
+            },
+            "BabyAI": {
+                "score": "48.1%",
+                "accuracy": "37.5%",
+                "grounding": "61.6%"
+            },
+            "WebArena": {
+                "score": "36.4%",
+                "accuracy": "8.6%",
+                "grounding": "83.9%"
+            },
+            "Jericho": {
+                "score": "20.4%",
+                "accuracy": "0.0%",
+                "grounding": "98.2%"
+            },
+            "Tool-Query": {
+                "score": "73.5%",
+                "accuracy": "48.3%",
+                "grounding": "93.7%"
+            },
+            "WebShop": {
+                "score": "74.6%",
+                "accuracy": "37.8%",
+                "grounding": "95.9%"
+            },
+            "ScienceWorld": {
+                "score": "32.0%",
+                "accuracy": "11.1%",
+                "grounding": "11.2%"
+            },
+            "Tool-Operation": {
+                "score": "59.6%",
+                "accuracy": "27.5%",
+                "grounding": "92.3%"
+            },
+            "Embodied": {
+                "score": "38.1%",
+                "accuracy": "24.4%",
+                "grounding": "43.4%"
+            },
+            "Game": {
+                "score": "40.9%",
+                "accuracy": "20.0%",
+                "grounding": "84.7%"
+            },
+            "Web": {
+                "score": "55.5%",
+                "accuracy": "23.2%",
+                "grounding": "89.9%"
+            },
+            "Tools": {
+                "score": "66.5%",
+                "accuracy": "37.9%",
+                "grounding": "93.0%"
+            },
+            "Avg": {
+                "score": "48.9%",
+                "accuracy": "26.2%",
+                "grounding": "73.9%"
+            }
+        }
+    },
+    {
+        "model": "GPT-3.5-Turbo",
+        "tasks": {
+            "Tool-Operation": {
+                "score": "37.2%",
+                "accuracy": "7.5%",
+                "grounding": "91.8%"
+            },
+            "PDDL": {
+                "score": "25.0%",
+                "accuracy": "5.0%",
+                "grounding": "66.0%"
+            },
+            "AlfWorld": {
+                "score": "35.6%",
+                "accuracy": "17.2%",
+                "grounding": "59.2%"
+            },
+            "BabyAI": {
+                "score": "51.7%",
+                "accuracy": "39.3%",
+                "grounding": "62.4%"
+            },
+            "WebArena": {
+                "score": "25.5%",
+                "accuracy": "4.6%",
+                "grounding": "91.3%"
+            },
+            "Jericho": {
+                "score": "19.9%",
+                "accuracy": "5.0%",
+                "grounding": "99.8%"
+            },
+            "Tool-Query": {
+                "score": "69.4%",
+                "accuracy": "45.0%",
+                "grounding": "97.7%"
+            },
+            "WebShop": {
+                "score": "76.4%",
+                "accuracy": "35.1%",
+                "grounding": "90.2%"
+            },
+            "ScienceWorld": {
+                "score": "31.9%",
+                "accuracy": "18.9%",
+                "grounding": "18.7%"
+            },
+            "Embodied": {
+                "score": "39.7%",
+                "accuracy": "25.1%",
+                "grounding": "46.8%"
+            },
+            "Game": {
+                "score": "22.4%",
+                "accuracy": "5.0%",
+                "grounding": "82.9%"
+            },
+            "Web": {
+                "score": "51.0%",
+                "accuracy": "19.9%",
+                "grounding": "90.8%"
+            },
+            "Tools": {
+                "score": "53.3%",
+                "accuracy": "26.2%",
+                "grounding": "94.8%"
+            },
+            "Avg": {
+                "score": "41.4%",
+                "accuracy": "19.7%",
+                "grounding": "75.2%"
+            }
+        }
+    },
+    {
+        "model": "GPT-3.5-Turbo-16k",
+        "tasks": {
+            "Tool-Operation": {
+                "score": "39.6%",
+                "accuracy": "15.0%",
+                "grounding": "92.2%"
+            },
+            "PDDL": {
+                "score": "22.6%",
+                "accuracy": "3.3%",
+                "grounding": "77.6%"
+            },
+            "AlfWorld": {
+                "score": "25.2%",
+                "accuracy": "4.5%",
+                "grounding": "57.4%"
+            },
+            "BabyAI": {
+                "score": "45.1%",
+                "accuracy": "33.9%",
+                "grounding": "73.3%"
+            },
+            "WebArena": {
+                "score": "23.7%",
+                "accuracy": "6.1%",
+                "grounding": "81.3%"
+            },
+            "Jericho": {
+                "score": "16.1%",
+                "accuracy": "0.0%",
+                "grounding": "100.0%"
+            },
+            "Tool-Query": {
+                "score": "59.1%",
+                "accuracy": "31.7%",
+                "grounding": "98.0%"
+            },
+            "WebShop": {
+                "score": "73.8%",
+                "accuracy": "27.9%",
+                "grounding": "96.6%"
+            },
+            "ScienceWorld": {
+                "score": "2.2%",
+                "accuracy": "0.0%",
+                "grounding": "9.2%"
+            },
+            "Embodied": {
+                "score": "24.2%",
+                "accuracy": "12.8%",
+                "grounding": "46.6%"
+            },
+            "Game": {
+                "score": "19.4%",
+                "accuracy": "1.6%",
+                "grounding": "88.8%"
+            },
+            "Web": {
+                "score": "48.8%",
+                "accuracy": "17.0%",
+                "grounding": "88.9%"
+            },
+            "Tools": {
+                "score": "49.4%",
+                "accuracy": "23.4%",
+                "grounding": "95.1%"
+            },
+            "Avg": {
+                "score": "34.2%",
+                "accuracy": "13.6%",
+                "grounding": "76.2%"
+            }
+        }
+    },
+    {
+        "model": "Text-Davinci-003",
+        "tasks": {
+            "Tool-Operation": {
+                "score": "56.2%",
+                "accuracy": "22.5%",
+                "grounding": "82.5%"
+            },
+            "PDDL": {
+                "score": "31.7%",
+                "accuracy": "11.7%",
+                "grounding": "72.6%"
+            },
+            "AlfWorld": {
+                "score": "18.8%",
+                "accuracy": "9.0%",
+                "grounding": "27.3%"
+            },
+            "BabyAI": {
+                "score": "17.5%",
+                "accuracy": "14.3%",
+                "grounding": "15.9%"
+            },
+            "WebArena": {
+                "score": "16.2%",
+                "accuracy": "2.5%",
+                "grounding": "23.7%"
+            },
+            "Jericho": {
+                "score": "28.6%",
+                "accuracy": "10.0%",
+                "grounding": "97.9%"
+            },
+            "Tool-Query": {
+                "score": "65.0%",
+                "accuracy": "38.3%",
+                "grounding": "95.2%"
+            },
+            "WebShop": {
+                "score": "72.3%",
+                "accuracy": "29.5%",
+                "grounding": "97.4%"
+            },
+            "ScienceWorld": {
+                "score": "28.9%",
+                "accuracy": "7.8%",
+                "grounding": "17.2%"
+            },
+            "Embodied": {
+                "score": "21.7%",
+                "accuracy": "10.4%",
+                "grounding": "20.1%"
+            },
+            "Game": {
+                "score": "30.1%",
+                "accuracy": "10.8%",
+                "grounding": "85.2%"
+            },
+            "Web": {
+                "score": "44.2%",
+                "accuracy": "16.0%",
+                "grounding": "60.6%"
+            },
+            "Tools": {
+                "score": "60.6%",
+                "accuracy": "30.4%",
+                "grounding": "88.8%"
+            },
+            "Avg": {
+                "score": "37.2%",
+                "accuracy": "16.2%",
+                "grounding": "58.9%"
+            }
+        }
+    },
+    {
+        "model": "Llama2-13b",
+        "tasks": {
+            "PDDL": {
+                "score": "4.1%",
+                "accuracy": "0.0%",
+                "grounding": "56.7%"
+            },
+            "AlfWorld": {
+                "score": "7.8%",
+                "accuracy": "0.0%",
+                "grounding": "8.9%"
+            },
+            "BabyAI": {
+                "score": "18.1%",
+                "accuracy": "6.2%",
+                "grounding": "37.4%"
+            },
+            "WebArena": {
+                "score": "7.9%",
+                "accuracy": "2.0%",
+                "grounding": "79.2%"
+            },
+            "Jericho": {
+                "score": "3.2%",
+                "accuracy": "0.0%",
+                "grounding": "99.5%"
+            },
+            "Tool-Operation": {
+                "score": "29.3%",
+                "accuracy": "0.0%",
+                "grounding": "74.1%"
+            },
+            "Tool-Query": {
+                "score": "35.1%",
+                "accuracy": "0.0%",
+                "grounding": "86.9%"
+            },
+            "ScienceWorld": {
+                "score": "1.1%",
+                "accuracy": "0.0%",
+                "grounding": "8.6%"
+            },
+            "WebShop": {
+                "score": "63.5%",
+                "accuracy": "10.8%",
+                "grounding": "73.5%"
+            },
+            "Embodied": {
+                "score": "9.0%",
+                "accuracy": "2.1%",
+                "grounding": "18.3%"
+            },
+            "Game": {
+                "score": "3.6%",
+                "accuracy": "0.0%",
+                "grounding": "78.1%"
+            },
+            "Web": {
+                "score": "35.7%",
+                "accuracy": "6.4%",
+                "grounding": "76.3%"
+            },
+            "Tools": {
+                "score": "32.2%",
+                "accuracy": "0.0%",
+                "grounding": "80.5%"
+            },
+            "Avg": {
+                "score": "18.9%",
+                "accuracy": "2.1%",
+                "grounding": "58.3%"
+            }
+        }
+    },
+    {
+        "model": "Llama2-70b",
+        "tasks": {
+            "PDDL": {
+                "score": "8.1%",
+                "accuracy": "1.7%",
+                "grounding": "30.6%"
+            },
+            "AlfWorld": {
+                "score": "13.2%",
+                "accuracy": "3.0%",
+                "grounding": "20.8%"
+            },
+            "BabyAI": {
+                "score": "30.0%",
+                "accuracy": "19.6%",
+                "grounding": "42.3%"
+            },
+            "WebArena": {
+                "score": "11.6%",
+                "accuracy": "3.3%",
+                "grounding": "93.6%"
+            },
+            "Jericho": {
+                "score": "7.8%",
+                "accuracy": "0.0%",
+                "grounding": "96.7%"
+            },
+            "Tool-Query": {
+                "score": "48.3%",
+                "accuracy": "0.0%",
+                "grounding": "90.6%"
+            },
+            "WebShop": {
+                "score": "53.6%",
+                "accuracy": "13.1%",
+                "grounding": "59.3%"
+            },
+            "ScienceWorld": {
+                "score": "2.6%",
+                "accuracy": "0.0%",
+                "grounding": "3.0%"
+            },
+            "Tool-Operation": {
+                "score": "38.6%",
+                "accuracy": "0.0%",
+                "grounding": "70.4%"
+            },
+            "Embodied": {
+                "score": "15.3%",
+                "accuracy": "7.5%",
+                "grounding": "22.0%"
+            },
+            "Game": {
+                "score": "7.9%",
+                "accuracy": "0.8%",
+                "grounding": "63.7%"
+            },
+            "Web": {
+                "score": "32.6%",
+                "accuracy": "8.2%",
+                "grounding": "76.4%"
+            },
+            "Tools": {
+                "score": "43.5%",
+                "accuracy": "0.0%",
+                "grounding": "80.5%"
+            },
+            "Avg": {
+                "score": "23.8%",
+                "accuracy": "4.5%",
+                "grounding": "56.4%"
+            }
+        }
+    },
+    {
+        "model": "CodeLlama-13b",
+        "tasks": {
+            "PDDL": {
+                "score": "9.3%",
+                "accuracy": "1.7%",
+                "grounding": "17.8%"
+            },
+            "AlfWorld": {
+                "score": "13.4%",
+                "accuracy": "2.2%",
+                "grounding": "15.8%"
+            },
+            "BabyAI": {
+                "score": "22.2%",
+                "accuracy": "17.0%",
+                "grounding": "34.6%"
+            },
+            "WebArena": {
+                "score": "17.7%",
+                "accuracy": "3.7%",
+                "grounding": "82.1%"
+            },
+            "Jericho": {
+                "score": "0.0%",
+                "accuracy": "0.0%",
+                "grounding": "99.7%"
+            },
+            "Tool-Query": {
+                "score": "52.5%",
+                "accuracy": "25.0%",
+                "grounding": "90.5%"
+            },
+            "WebShop": {
+                "score": "65.5%",
+                "accuracy": "25.9%",
+                "grounding": "78.0%"
+            },
+            "Tool-Operation": {
+                "score": "41.8%",
+                "accuracy": "12.5%",
+                "grounding": "79.2%"
+            },
+            "ScienceWorld": {
+                "score": "9.6%",
+                "accuracy": "2.2%",
+                "grounding": "9.0%"
+            },
+            "Embodied": {
+                "score": "15.1%",
+                "accuracy": "7.1%",
+                "grounding": "19.8%"
+            },
+            "Game": {
+                "score": "4.7%",
+                "accuracy": "0.8%",
+                "grounding": "58.8%"
+            },
+            "Web": {
+                "score": "41.6%",
+                "accuracy": "14.8%",
+                "grounding": "80.0%"
+            },
+            "Tools": {
+                "score": "47.1%",
+                "accuracy": "18.8%",
+                "grounding": "84.8%"
+            },
+            "Avg": {
+                "score": "25.8%",
+                "accuracy": "10.0%",
+                "grounding": "56.3%"
+            }
+        }
+    },
+    {
+        "model": "CodeLlama-34b",
+        "tasks": {
+            "PDDL": {
+                "score": "18.5%",
+                "accuracy": "3.3%",
+                "grounding": "43.6%"
+            },
+            "AlfWorld": {
+                "score": "11.3%",
+                "accuracy": "3.0%",
+                "grounding": "8.4%"
+            },
+            "BabyAI": {
+                "score": "19.9%",
+                "accuracy": "13.4%",
+                "grounding": "28.0%"
+            },
+            "WebArena": {
+                "score": "21.2%",
+                "accuracy": "4.1%",
+                "grounding": "96.8%"
+            },
+            "Jericho": {
+                "score": "15.5%",
+                "accuracy": "0.0%",
+                "grounding": "97.3%"
+            },
+            "Tool-Query": {
+                "score": "60.0%",
+                "accuracy": "13.3%",
+                "grounding": "97.5%"
+            },
+            "WebShop": {
+                "score": "71.7%",
+                "accuracy": "23.5%",
+                "grounding": "98.3%"
+            },
+            "Tool-Operation": {
+                "score": "48.8%",
+                "accuracy": "7.5%",
+                "grounding": "82.8%"
+            },
+            "ScienceWorld": {
+                "score": "3.5%",
+                "accuracy": "0.0%",
+                "grounding": "0.4%"
+            },
+            "Embodied": {
+                "score": "11.6%",
+                "accuracy": "5.5%",
+                "grounding": "12.3%"
+            },
+            "Game": {
+                "score": "17.0%",
+                "accuracy": "1.6%",
+                "grounding": "70.5%"
+            },
+            "Web": {
+                "score": "46.5%",
+                "accuracy": "13.8%",
+                "grounding": "97.5%"
+            },
+            "Tools": {
+                "score": "54.4%",
+                "accuracy": "10.4%",
+                "grounding": "90.2%"
+            },
+            "Avg": {
+                "score": "30.0%",
+                "accuracy": "7.6%",
+                "grounding": "61.5%"
+            }
+        }
+    },
+    {
+        "model": "Vicuna-13b-16k",
+        "tasks": {
+            "PDDL": {
+                "score": "7.2%",
+                "accuracy": "1.7%",
+                "grounding": "59.2%"
+            },
+            "AlfWorld": {
+                "score": "11.0%",
+                "accuracy": "1.5%",
+                "grounding": "17.2%"
+            },
+            "BabyAI": {
+                "score": "14.3%",
+                "accuracy": "5.4%",
+                "grounding": "74.5%"
+            },
+            "WebArena": {
+                "score": "11.3%",
+                "accuracy": "2.9%",
+                "grounding": "58.7%"
+            },
+            "Jericho": {
+                "score": "15.2%",
+                "accuracy": "0.0%",
+                "grounding": "100.0%"
+            },
+            "Tool-Query": {
+                "score": "34.3%",
+                "accuracy": "3.3%",
+                "grounding": "97.9%"
+            },
+            "WebShop": {
+                "score": "73.3%",
+                "accuracy": "21.9%",
+                "grounding": "94.1%"
+            },
+            "ScienceWorld": {
+                "score": "14.1%",
+                "accuracy": "2.2%",
+                "grounding": "24.1%"
+            },
+            "Tool-Operation": {
+                "score": "26.9%",
+                "accuracy": "0.0%",
+                "grounding": "92.2%"
+            },
+            "Embodied": {
+                "score": "13.1%",
+                "accuracy": "3.0%",
+                "grounding": "38.6%"
+            },
+            "Game": {
+                "score": "11.2%",
+                "accuracy": "0.8%",
+                "grounding": "79.6%"
+            },
+            "Web": {
+                "score": "42.3%",
+                "accuracy": "12.4%",
+                "grounding": "76.4%"
+            },
+            "Tools": {
+                "score": "30.6%",
+                "accuracy": "1.6%",
+                "grounding": "95.1%"
+            },
+            "Avg": {
+                "score": "23.1%",
+                "accuracy": "4.3%",
+                "grounding": "68.7%"
+            }
+        }
+    },
+    {
+        "model": "Lemur-70b",
+        "tasks": {
+            "PDDL": {
+                "score": "9.7%",
+                "accuracy": "3.3%",
+                "grounding": "31.0%"
+            },
+            "AlfWorld": {
+                "score": "10.8%",
+                "accuracy": "0.7%",
+                "grounding": "15.7%"
+            },
+            "BabyAI": {
+                "score": "19.4%",
+                "accuracy": "9.8%",
+                "grounding": "44.6%"
+            },
+            "WebArena": {
+                "score": "12.2%",
+                "accuracy": "3.3%",
+                "grounding": "82.8%"
+            },
+            "Jericho": {
+                "score": "10.1%",
+                "accuracy": "0.0%",
+                "grounding": "97.7%"
+            },
+            "Tool-Query": {
+                "score": "72.0%",
+                "accuracy": "28.3%",
+                "grounding": "96.5%"
+            },
+            "WebShop": {
+                "score": "71.8%",
+                "accuracy": "11.6%",
+                "grounding": "84.0%"
+            },
+            "ScienceWorld": {
+                "score": "33.4%",
+                "accuracy": "5.6%",
+                "grounding": "47.8%"
+            },
+            "Tool-Operation": {
+                "score": "37.7%",
+                "accuracy": "12.5%",
+                "grounding": "88.4%"
+            },
+            "Embodied": {
+                "score": "21.2%",
+                "accuracy": "5.4%",
+                "grounding": "36.0%"
+            },
+            "Game": {
+                "score": "9.9%",
+                "accuracy": "1.6%",
+                "grounding": "64.3%"
+            },
+            "Web": {
+                "score": "42.0%",
+                "accuracy": "7.4%",
+                "grounding": "83.4%"
+            },
+            "Tools": {
+                "score": "54.9%",
+                "accuracy": "20.4%",
+                "grounding": "92.5%"
+            },
+            "Avg": {
+                "score": "30.8%",
+                "accuracy": "8.3%",
+                "grounding": "65.4%"
+            }
+        }
+    },
+    {
+        "model": "DeepSeek-67b",
+        "tasks": {
+            "BabyAI": {
+                "score": "31.7%",
+                "accuracy": "22.3%",
+                "grounding": "65.4%"
+            },
+            "ScienceWorld": {
+                "score": "36.1%",
+                "accuracy": "10.0%",
+                "grounding": "12.6%"
+            },
+            "AlfWorld": {
+                "score": "34.5%",
+                "accuracy": "20.9%",
+                "grounding": "43.6%"
+            },
+            "Jericho": {
+                "score": "13.7%",
+                "accuracy": "0.0%",
+                "grounding": "99.8%"
+            },
+            "PDDL": {
+                "score": "22.0%",
+                "accuracy": "6.7%",
+                "grounding": "62.7%"
+            },
+            "WebShop": {
+                "score": "72.7%",
+                "accuracy": "31.9%",
+                "grounding": "95.4%"
+            },
+            "WebArena": {
+                "score": "23.9%",
+                "accuracy": "5.7%",
+                "grounding": "55.7%"
+            },
+            "Tool-Query": {
+                "score": "71.4%",
+                "accuracy": "40.0%",
+                "grounding": "93.1%"
+            },
+            "Tool-Operation": {
+                "score": "40.5%",
+                "accuracy": "17.5%",
+                "grounding": "80.5%"
+            },
+            "Embodied": {
+                "score": "34.1%",
+                "accuracy": "17.7%",
+                "grounding": "40.5%"
+            },
+            "Game": {
+                "score": "17.9%",
+                "accuracy": "3.4%",
+                "grounding": "81.2%"
+            },
+            "Web": {
+                "score": "48.3%",
+                "accuracy": "18.8%",
+                "grounding": "75.6%"
+            },
+            "Tools": {
+                "score": "56.0%",
+                "accuracy": "28.8%",
+                "grounding": "86.8%"
+            },
+            "Avg": {
+                "score": "38.5%",
+                "accuracy": "17.2%",
+                "grounding": "67.6%"
+            }
+        }
+    },
+    {
+        "model": "Mistral-7b",
+        "tasks": {
+            "PDDL": {
+                "score": "4.7%",
+                "accuracy": "0.0%",
+                "grounding": "18.1%"
+            },
+            "BabyAI": {
+                "score": "20.1%",
+                "accuracy": "14.3%",
+                "grounding": "33.9%"
+            },
+            "ScienceWorld": {
+                "score": "15.8%",
+                "accuracy": "2.2%",
+                "grounding": "7.9%"
+            },
+            "AlfWorld": {
+                "score": "9.8%",
+                "accuracy": "0.0%",
+                "grounding": "12.1%"
+            },
+            "WebShop": {
+                "score": "68.2%",
+                "accuracy": "13.9%",
+                "grounding": "83.5%"
+            },
+            "WebArena": {
+                "score": "13.2%",
+                "accuracy": "1.3%",
+                "grounding": "37.5%"
+            },
+            "Tool-Query": {
+                "score": "51.0%",
+                "accuracy": "3.3%",
+                "grounding": "69.7%"
+            },
+            "Tool-Operation": {
+                "score": "27.2%",
+                "accuracy": "0.0%",
+                "grounding": "35.1%"
+            },
+            "Jericho": {
+                "score": "11.0%",
+                "accuracy": "0.0%",
+                "grounding": "96.2%"
+            },
+            "Embodied": {
+                "score": "15.2%",
+                "accuracy": "5.5%",
+                "grounding": "18.0%"
+            },
+            "Game": {
+                "score": "7.8%",
+                "accuracy": "0.0%",
+                "grounding": "57.2%"
+            },
+            "Web": {
+                "score": "40.7%",
+                "accuracy": "7.6%",
+                "grounding": "60.5%"
+            },
+            "Tools": {
+                "score": "39.1%",
+                "accuracy": "1.6%",
+                "grounding": "52.4%"
+            },
+            "Avg": {
+                "score": "24.6%",
+                "accuracy": "3.9%",
+                "grounding": "43.8%"
+            }
+        }
+    }
+]
