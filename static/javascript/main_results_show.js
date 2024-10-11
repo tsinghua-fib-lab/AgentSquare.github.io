@@ -248,10 +248,11 @@ function createMainResultChart() {
                 
                             // 生成每个模块的提示内容
                             let tooltipText = '';
-                            tooltipText += `Planning: ${modules.planning}\n`;
-                            tooltipText += `Reasoning: ${modules.reasoning}\n`;
-                            tooltipText += `Tooluse: ${modules.tooluse}\n`;
-                            tooltipText += `Memory: ${modules.memory}\n`;
+                            let tooltipText = [];
+                            tooltipText.push(`planning: ${modules.planning}`);
+                            tooltipText.push(`reasoning: ${modules.reasoning}`);
+                            tooltipText.push(`tooluse: ${modules.tooluse}`);
+                            tooltipText.push(`memory: ${modules.memory}`);
                 
                             return tooltipText;  // 返回生成的提示文本
                         }
