@@ -243,19 +243,19 @@ function createMainResultChart() {
                 tooltip: {
                     callbacks: {
                         label: function (context) {
-                            // let label = context.dataset.label || '';
-                            // if (label) {
-                            //     label += ': ';
-                            // }
-                            // label += context.formattedValue;
-                            // return label;
-                            let method = context.label;  // 获取当前悬停的method名称
-                            let modules = methodModulesMapping[method];  // 获取对应的模块信息
+                            let label = context.dataset.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            label += context.formattedValue;
+                            return label;
+                            // let method = context.label;  // 获取当前悬停的method名称
+                            // let modules = methodModulesMapping[method];  // 获取对应的模块信息
                 
-                            // 生成每个模块的提示内容
-                            let tooltipText = `planning: ${modules.planning}\nreasoning: ${modules.reasoning}\ntooluse: ${modules.tooluse}\nmemory: ${modules.memory}`;
+                            // // 生成每个模块的提示内容
+                            // let tooltipText = `planning: ${modules.planning}\nreasoning: ${modules.reasoning}\ntooluse: ${modules.tooluse}\nmemory: ${modules.memory}`;
                 
-                            return tooltipText;  // 返回生成的提示文本
+                            // return tooltipText;  // 返回生成的提示文本
                         }
                     }
                 },
