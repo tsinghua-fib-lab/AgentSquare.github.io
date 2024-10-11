@@ -253,7 +253,6 @@ function createMainResultChart() {
                             let modules = methodModulesMapping[method];  // 获取对应的模块信息
                 
                             // 生成每个模块的提示内容
-                            let tooltipText = '';
                             let tooltipText = `planning: ${modules.planning}\nreasoning: ${modules.reasoning}\ntooluse: ${modules.tooluse}\nmemory: ${modules.memory}`;
                 
                             return tooltipText;  // 返回生成的提示文本
