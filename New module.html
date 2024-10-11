@@ -23,17 +23,31 @@
             margin: 20px 0;
         }
 
+        /* 修改按钮样式为图片按钮 */
         .btn-group button {
-            background-color: #4CAF50; /* 按钮颜色 */
-            border: none;
-            color: white;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 10px;
+            color: black;
             padding: 10px 20px;
             cursor: pointer;
             margin: 5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
         }
 
         .btn-group button:hover {
-            background-color: #45a049;
+            background-color: #f0f0f0;
+        }
+
+        /* 图标样式 */
+        .btn-group img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
         }
 
         .module-display {
@@ -55,12 +69,24 @@
 
 <!-- Filter by Task -->
 <div class="btn-group">
-    <button onclick="showModules('Webshop')">Webshop</button>
-    <button onclick="showModules('ALFWorld')">ALFWorld</button>
-    <button onclick="showModules('SciWorld')">SciWorld</button>
-    <button onclick="showModules('M3Tool')">M3Tool</button>
-    <button onclick="showModules('TravelPlanner')">TravelPlanner</button>
-    <button onclick="showModules('PDDL')">PDDL</button>
+    <button onclick="showModules('Webshop')">
+        <img src="static/img/icon/paper_icon.png" alt="Webshop Icon">Webshop
+    </button>
+    <button onclick="showModules('ALFWorld')">
+        <img src="static/img/icon/paper_icon.png" alt="ALFWorld Icon">ALFWorld
+    </button>
+    <button onclick="showModules('SciWorld')">
+        <img src="static/img/icon/paper_icon.png" alt="SciWorld Icon">SciWorld
+    </button>
+    <button onclick="showModules('M3Tool')">
+        <img src="static/img/icon/paper_icon.png" alt="M3Tool Icon">M3Tool
+    </button>
+    <button onclick="showModules('TravelPlanner')">
+        <img src="static/img/icon/paper_icon.png" alt="TravelPlanner Icon">TravelPlanner
+    </button>
+    <button onclick="showModules('PDDL')">
+        <img src="static/img/icon/paper_icon.png" alt="PDDL Icon">PDDL
+    </button>
 </div>
 
 <!-- 模块显示区域 -->
@@ -115,4 +141,3 @@
 
 </body>
 </html>
-
