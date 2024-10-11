@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentSquare - Task Specific Modules</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <style>
+        /* 简单的样式设置 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .btn-group {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .btn-group button {
+            background-color: #4CAF50; /* 按钮颜色 */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .btn-group button:hover {
+            background-color: #45a049;
+        }
+
+        .module-display {
+            display: none; /* 初始状态下不显示 */
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .module-display img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>AgentSquare - Task Specific Modules</h1>
+
+<!-- Filter by Task -->
+<div class="btn-group">
+    <button onclick="showModules('Webshop')">Webshop</button>
+    <button onclick="showModules('ALFWorld')">ALFWorld</button>
+    <button onclick="showModules('SciWorld')">SciWorld</button>
+    <button onclick="showModules('M3Tool')">M3Tool</button>
+    <button onclick="showModules('TravelPlanner')">TravelPlanner</button>
+    <button onclick="showModules('PDDL')">PDDL</button>
+</div>
+
+<!-- 模块显示区域 -->
+<div id="Webshop" class="module-display">
+    <h2>Webshop New Modules</h2>
+    <img src="static/img/moduleA_webshop.png" alt="Module A">
+    <img src="static/img/moduleB_webshop.png" alt="Module B">
+</div>
+
+<div id="ALFWorld" class="module-display">
+    <h2>ALFWorld New Modules</h2>
+    <img src="static/img/moduleA_alfworld.png" alt="Module A">
+    <img src="static/img/moduleB_alfworld.png" alt="Module B">
+</div>
+
+<div id="SciWorld" class="module-display">
+    <h2>SciWorld New Modules</h2>
+    <img src="static/img/moduleA_sciworld.png" alt="Module A">
+    <img src="static/img/moduleB_sciworld.png" alt="Module B">
+</div>
+
+<div id="M3Tool" class="module-display">
+    <h2>M3Tool New Modules</h2>
+    <img src="static/img/moduleA_m3tool.png" alt="Module A">
+</div>
+
+<div id="TravelPlanner" class="module-display">
+    <h2>TravelPlanner New Modules</h2>
+    <img src="static/img/moduleA_travelplanner.png" alt="Module A">
+    <img src="static/img/moduleB_travelplanner.png" alt="Module B">
+</div>
+
+<div id="PDDL" class="module-display">
+    <h2>PDDL New Modules</h2>
+    <img src="static/img/moduleA_pddl.png" alt="Module A">
+    <img src="static/img/moduleB_pddl.png" alt="Module B">
+</div>
+
+<script>
+    // JavaScript 函数用于切换显示模块
+    function showModules(task) {
+        // 隐藏所有模块
+        const modules = document.getElementsByClassName('module-display');
+        for (let i = 0; i < modules.length; i++) {
+            modules[i].style.display = 'none';
+        }
+        
+        // 显示选中的模块
+        document.getElementById(task).style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
 
