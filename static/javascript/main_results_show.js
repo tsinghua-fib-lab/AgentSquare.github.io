@@ -9,6 +9,15 @@ const sortby_options = {
 };
 let cur_sortby_option = sortby_options.BY_REWARD_SCORE;
 
+const methodModulesMapping = {
+    'Voyager': {
+        planning: 'Voyager',
+        reasoning: 'IO',
+        tooluse: 'None',
+        memory: 'Voyager'
+    },
+}
+
 const taskSubtaskMapping = {
     'Avg': ['Webshop', 'ALFWorld', 'SciWorld', 'M3Tool', 'TravelPlanner', 'PDDL'],
     'Embodied': ['AlfWorld', 'ScienceWorld', 'BabyAI'],
@@ -228,12 +237,23 @@ function createMainResultChart() {
                 tooltip: {
                     callbacks: {
                         label: function (context) {
-                            let label = context.dataset.label || '';
-                            if (label) {
-                                label += ': ';
-                            }
-                            label += context.formattedValue;
-                            return label;
+                            // let label = context.dataset.label || '';
+                            // if (label) {
+                            //     label += ': ';
+                            // }
+                            // label += context.formattedValue;
+                            // return label;
+                            let method = context.label;  // 获取当前悬停的method名称
+                            let modules = methodModulesMapping[method];  // 获取对应的模块信息
+                
+                            // 生成每个模块的提示内容
+                            let tooltipText = '';
+                            tooltipText += `Planning: ${modules.planning}\n`;
+                            tooltipText += `Reasoning: ${modules.reasoning}\n`;
+                            tooltipText += `Tooluse: ${modules.tooluse}\n`;
+                            tooltipText += `Memory: ${modules.memory}\n`;
+                
+                            return tooltipText;  // 返回生成的提示文本
                         }
                     }
                 },
