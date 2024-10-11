@@ -64,6 +64,20 @@
     </style>
 </head>
 <body>
+<div id="nav">
+    <div id="icon">
+        <img src="static/img/icon/logo.jpg" id="nav-icon" alt="AgentSquare">
+        <a class="nav-button-main" href="../index.html#home"
+           style="margin-left: 2px; font-size: 22px">AgentBoard
+        </a>
+    </div>
+    <div>
+        <a class="nav-button" href="../index.html#home">
+            <img src="img/icon/home_icon.png" alt="Home">Home</a>
+        <a class="nav-button" href="New module.html">
+            <img src="static/img/icon/data_icon.png" alt="New Module">New Module</a>
+    </div>
+</div>
 
 <h1>AgentSquare - Task Specific Modules</h1>
 
@@ -98,37 +112,37 @@
 <!-- 模块显示区域 -->
 <div id="Webshop" class="module-display">
     <h2>Webshop New Modules</h2>
-    <img src="static/img/webshop.jpg" alt="Module HTSS">
+    <img src="static/img/webshop.jpg" alt="Module HTSS" style="width: 600px">
 <!--     <img src="static/img/moduleB_webshop.png" alt="Module B"> -->
 </div>
 
 <div id="ALFWorld" class="module-display">
     <h2>ALFWorld New Modules</h2>
-    <img src="static/img/moduleA_alfworld.jpg" alt="Module A">
-    <img src="static/img/moduleB_alfworld.jpg" alt="Module B">
+    <img src="static/img/moduleA_alfworld.jpg" alt="Module A" style="width: 600px>
+    <img src="static/img/moduleB_alfworld.jpg" alt="Module B" style="width: 600px>
 </div>
 
 <div id="SciWorld" class="module-display">
     <h2>SciWorld New Modules</h2>
-    <img src="static/img/moduleA_sciworld.jpg" alt="Module A">
+    <img src="static/img/moduleA_sciworld.jpg" alt="Module A" style="width: 600px>
 <!--     <img src="static/img/moduleB_sciworld.png" alt="Module B"> -->
 </div>
 
 <div id="M3Tool" class="module-display">
     <h2>M3Tool New Modules</h2>
-    <img src="static/img/moduleA_m3tool.jpg" alt="Module A">
+    <img src="static/img/moduleA_m3tool.jpg" alt="Module A" style="width: 600px>
 </div>
 
 <div id="TravelPlanner" class="module-display">
     <h2>TravelPlanner New Modules</h2>
-    <img src="static/img/moduleA_travelplanner.jpg" alt="Module A">
+    <img src="static/img/moduleA_travelplanner.jpg" alt="Module A" style="width: 600px>
 <!--     <img src="static/img/moduleB_travelplanner.png" alt="Module B"> -->
 </div>
 
 <div id="PDDL" class="module-display">
     <h2>PDDL New Modules</h2>
-    <img src="static/img/moduleA_pddl.jpg" alt="Module A">
-    <img src="static/img/moduleB_pddl.jpg" alt="Module B">
+    <img src="static/img/moduleA_pddl.jpg" alt="Module A" style="width: 600px>
+    <img src="static/img/moduleB_pddl.jpg" alt="Module B" style="width: 600px>
 </div>
 
 <script>
@@ -143,6 +157,10 @@
         // 显示选中的模块
         document.getElementById(task).style.display = 'block';
     }
+    // 默认显示 Webshop 模块
+    document.addEventListener('DOMContentLoaded', function () {
+        showModules('Webshop');
+    });
 </script>
 
 </body>
