@@ -16,6 +16,12 @@ const methodModulesMapping = {
         tooluse: 'None',
         memory: 'Voyager'
     },
+    'CoT': {
+        planning: 'None',
+        reasoning: 'CoT',
+        tooluse: 'None',
+        memory: 'None'
+    },
 }
 
 const taskSubtaskMapping = {
@@ -248,11 +254,7 @@ function createMainResultChart() {
                 
                             // 生成每个模块的提示内容
                             let tooltipText = '';
-                            let tooltipText = [];
-                            tooltipText.push(`planning: ${modules.planning}`);
-                            tooltipText.push(`reasoning: ${modules.reasoning}`);
-                            tooltipText.push(`tooluse: ${modules.tooluse}`);
-                            tooltipText.push(`memory: ${modules.memory}`);
+                            let tooltipText = `planning: ${modules.planning}\nreasoning: ${modules.reasoning}\ntooluse: ${modules.tooluse}\nmemory: ${modules.memory}`;
                 
                             return tooltipText;  // 返回生成的提示文本
                         }
