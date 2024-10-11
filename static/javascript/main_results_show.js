@@ -497,7 +497,8 @@ Object.values(sortby_options).forEach(sortby_option => {
 
         btn.classList.add('active');
 
-        cur_sortby_option = sortby_option;
+        // cur_sortby_option = sortby_option;
+        cur_sortby_option = sortby_options.BY_REWARD_SCORE
 
         createMainResultChart();
     });
