@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css"/>
+    <title>Explore | AgentBoard: An Analytical Evaluation Board of Multi-Turn LLM Agents</title>
+    <link rel="icon" href="img/icon/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/explore.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script
+            src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NV0BT2WTBM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-NV0BT2WTBM');
+    </script>
+</head>
+
+<body>
+<div id="nav">
+    <div id="icon">
+        <img src="img/icon/logo.png" id="nav-icon">
+        <a class="nav-button-main" href="../index.html#home"
+           style="margin-left: 2px; font-size: 22px">AgentBoard
+        </a>
+    </div>
+    <div>
+        <a class="nav-button" href="../index.html#home">
+            <img src="img/icon/home_icon.png" alt="Home">Home</a>
+        <a class="nav-button" href="leaderboard.html">
+            <img src="img/icon/leaderboard_icon.png" alt="Result">Result</a>
+        <a class="nav-button" href="explore.html">
+            <img src="img/icon/explore_icon.png" alt="Explore">Explore</a>
+    </div>
+</div>
+
+<div class="popup">
+    <div class="tabs">
+        <input type="radio" id="tab1" name="tab" data-target=".content-alfworld" checked="true">
+        <label for="tab1"><img src="img/icon/embodied_icon.png" alt="embodied">Alfworld</label>
+        <input type="radio" id="tab2" name="tab" data-target=".content-scienceworld">
+        <label for="tab2"><img src="img/icon/embodied_icon.png" alt="embodied">Scienceworld</label>
+        <input type="radio" id="tab3" name="tab" data-target=".content-babyai">
+        <label for="tab3"><img src="img/icon/embodied_icon.png" alt="embodied">Babyai</label>
+        <input type="radio" id="tab4" name="tab" data-target=".content-jericho">
+        <label for="tab4"><img src="img/icon/game_icon.png" alt="game">Jericho</label>
+        <input type="radio" id="tab5" name="tab" data-target=".content-pddl">
+        <label for="tab5"><img src="img/icon/game_icon.png" alt="game">Pddl</label>
+        <input type="radio" id="tab6" name="tab" data-target=".content-webshop">
+        <label for="tab6"><img src="img/icon/web_icon.png" alt="web">Webshop</label>
+        <input type="radio" id="tab7" name="tab" data-target=".content-webarena">
+        <label for="tab7"><img src="img/icon/web_icon.png" alt="web">Webarena</label>
+        <input type="radio" id="tab8" name="tab" data-target=".content-toolacademia">
+        <label for="tab8"><img src="img/icon/tool_icon.png" alt="tool">Tool-academia</label>
+        <input type="radio" id="tab9" name="tab" data-target=".content-toolmovie">
+        <label for="tab9"><img src="img/icon/tool_icon.png" alt="tool">Tool-movie</label>
+        <input type="radio" id="tab10" name="tab" data-target=".content-toolweather">
+        <label for="tab10"><img src="img/icon/tool_icon.png" alt="tool">Tool-weather</label>
+        <input type="radio" id="tab11" name="tab" data-target=".content-tooltodo">
+        <label for="tab11"><img src="img/icon/tool_icon.png" alt="tool">Tool-todo</label>
+        <input type="radio" id="tab12" name="tab" data-target=".content-toolsheet">
+        <label for="tab12"><img src="img/icon/tool_icon.png" alt="tool">Tool-sheet</label>
+        <div class="marker">
+            <div id="top"></div>
+            <div id="bottom"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-left">
+            <div class="content-left-content">
+            </div>
+        </div>
+        <div class="divider">
+        </div>
+        <div class="content-right">
+        </div>
+    </div>
+    <script src="javascript/explore.js" type="module"></script>
+</div>
+</body>
+
+</html>
