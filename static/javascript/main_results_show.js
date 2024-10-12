@@ -22,6 +22,66 @@ const methodModulesMapping = {
         tooluse: 'None',
         memory: 'None'
     },
+    'Cot-SC': {
+        planning: 'None',
+        reasoning: 'Cot-SC',
+        tooluse: 'None',
+        memory: 'None'
+    },
+    'Self-refine': {
+        planning: 'None',
+        reasoning: 'Self-refine',
+        tooluse: 'None',
+        memory: 'None'
+    },
+    'ToT': {
+        planning: 'None',
+        reasoning: 'ToT',
+        tooluse: 'None',
+        memory: 'None'
+    },
+    'Step Back': {
+        planning: 'None',
+        reasoning: 'Step Back',
+        tooluse: 'None',
+        memory: 'None'
+    },
+    'TP': {
+        planning: 'None',
+        reasoning: 'IO',
+        tooluse: 'None',
+        memory: 'TP'
+    },
+    'HuggingGPT': {
+        planning: 'HuggingGPT',
+        reasoning: 'IO',
+        tooluse: 'None',
+        memory: 'None'
+    },
+    'Generative Agents': {
+        planning: 'None',
+        reasoning: 'IO',
+        tooluse: 'None',
+        memory: 'Generative Agents'
+    },
+    'DEPS': {
+        planning: 'DEPS',
+        reasoning: 'IO',
+        tooluse: 'None',
+        memory: 'None'
+    },
+    'OPENAGI': {
+        planning: 'OPENAGI',
+        reasoning: 'IO',
+        tooluse: 'None',
+        memory: 'None'
+    },
+    'Dilu': {
+        planning: 'None',
+        reasoning: 'Dilu',
+        tooluse: 'None',
+        memory: 'Dilu'
+    }
 }
 
 const taskSubtaskMapping = {
@@ -255,7 +315,7 @@ function createMainResultChart() {
                             let modules = methodModulesMapping[method];  // 获取对应的模块信息
                 
                             // 生成每个模块的提示内容
-                            let tooltipText = `planning: ${modules.planning}\nreasoning: ${modules.reasoning}\ntooluse: ${modules.tooluse}\nmemory: ${modules.memory}`;
+                            let tooltipText = `Planning: ${modules.planning}\nReasoning: ${modules.reasoning}\nTooluse: ${modules.tooluse}\nMemory: ${modules.memory}`;
                 
                             return tooltipText;  // 返回生成的提示文本
                         }
