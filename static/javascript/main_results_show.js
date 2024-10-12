@@ -355,11 +355,11 @@ function createMainResultChart() {
                             let modules = methodModulesMapping[method];  // 获取对应的模块信息
 
                             if (method === 'AgentSquare'){
-                                if currentTask !== 'Avg'{
+                                if (currentTask !== 'Avg'){
                                     modules = agentSquareModules[currentTask];
                                 }
                                 else {
-                                    return ''
+                                    return '';
                                 }
                             }
                 
