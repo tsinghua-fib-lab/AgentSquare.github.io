@@ -299,7 +299,7 @@ function createMainResultChart() {
                     grace: 10,
                     title: {
                         display: true,
-                        text: 'Value (%)',
+                        text: 'Performance (%)',
                         font: {
                             size: 14,
                             family: "'Noto Sans', sans-serif",
@@ -327,19 +327,19 @@ function createMainResultChart() {
                 }
             },
             plugins: {
-                legend: {
-                    display: true,
-                    labels: {
-                        usePointStyle: true,
-                        font: {
-                            size: 10,
-                            family: "'Noto Sans', sans-serif",
-                            weight: 'bold'
-                        }
-                    },
-                    align: 'center',
-                    position: 'bottom'
-                },
+                // legend: {
+                //     display: true,
+                //     labels: {
+                //         usePointStyle: true,
+                //         font: {
+                //             size: 10,
+                //             family: "'Noto Sans', sans-serif",
+                //             weight: 'bold'
+                //         }
+                //     },
+                //     align: 'center',
+                //     position: 'bottom'
+                // },
                 tooltip: {
                     callbacks: {
                         label: function (context) {
