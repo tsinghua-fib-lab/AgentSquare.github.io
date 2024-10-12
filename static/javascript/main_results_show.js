@@ -315,7 +315,7 @@ function createMainResultChart() {
                             let modules = methodModulesMapping[method];  // 获取对应的模块信息
                 
                             // 生成每个模块的提示内容
-                            let tooltipText = `Planning: ${modules.planning}\nReasoning: ${modules.reasoning}\nTooluse: ${modules.tooluse}\nMemory: ${modules.memory}`;
+                            let tooltipText = `Planning: ${modules.planning}<br>Reasoning: ${modules.reasoning}<br>Tooluse: ${modules.tooluse}<br>Memory: ${modules.memory}`;
                 
                             return tooltipText;  // 返回生成的提示文本
                         }
