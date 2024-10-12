@@ -355,11 +355,10 @@ function createMainResultChart() {
                             let modules = methodModulesMapping[method];  // 获取对应的模块信息
 
                             if (method === 'AgentSquare'){
-
-                                
+                                modules = agentSquareModules[currentTask];
                             }
                 
-                            let tooltipText = `${currentTask}Planning: ${modules.planning}\nReasoning: ${modules.reasoning}\nTooluse: ${modules.tooluse}\nMemory: ${modules.memory}`;
+                            let tooltipText = `Planning: ${modules.planning}\nReasoning: ${modules.reasoning}\nTooluse: ${modules.tooluse}\nMemory: ${modules.memory}`;
                 
                             return tooltipText;  // 返回生成的提示文本
                         }
