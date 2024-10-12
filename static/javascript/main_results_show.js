@@ -359,7 +359,7 @@ function createMainResultChart() {
                                 
                             }
                 
-                            let tooltipText = `${task}Planning: ${modules.planning}\nReasoning: ${modules.reasoning}\nTooluse: ${modules.tooluse}\nMemory: ${modules.memory}`;
+                            let tooltipText = `${currentTask}Planning: ${modules.planning}\nReasoning: ${modules.reasoning}\nTooluse: ${modules.tooluse}\nMemory: ${modules.memory}`;
                 
                             return tooltipText;  // 返回生成的提示文本
                         }
