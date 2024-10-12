@@ -362,6 +362,9 @@ function createMainResultChart() {
                                     return '';
                                 }
                             }
+                            if (method === 'Bayesian Search' || method === 'Random Search' || method ==='OPRO'){
+                                return ''
+                            }
                 
                             let tooltipText = `Planning: ${modules.planning}\nReasoning: ${modules.reasoning}\nTooluse: ${modules.tooluse}\nMemory: ${modules.memory}`;
                 
