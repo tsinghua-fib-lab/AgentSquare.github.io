@@ -84,6 +84,46 @@ const methodModulesMapping = {
     }
 }
 
+const agentSquareModules = {
+    'Webshop': {
+        planning: 'IO',
+        reasoning: 'HTSS',
+        tooluse: 'None',
+        memory: 'Dilu'
+    },
+    'ALFWorld': {
+        planning: 'TD',
+        reasoning: 'SF-ToT',
+        tooluse: 'None',
+        memory: 'Generative Agents'
+    },
+    'SciWorld': {
+        planning: 'Voyager',
+        reasoning: 'CoT',
+        tooluse: 'None',
+        memory: 'Hier'
+    },
+    'M3Tool': {
+        planning: 'None',
+        reasoning: 'CoT-SC',
+        tooluse: 'ToolBF',
+        memory: 'None'
+    },
+    'TravelPlanner': {
+        planning: 'DEPS',
+        reasoning: 'CoT',
+        tooluse: 'TH',
+        memory: 'None'
+    },
+    'PDDL': {
+        planning: 'IR',
+        reasoning: 'CASRC',
+        tooluse: 'None',
+        memory: 'Generative Agents'
+    }
+};
+
+
 const taskSubtaskMapping = {
     'Avg': ['Webshop', 'ALFWorld', 'SciWorld', 'M3Tool', 'TravelPlanner', 'PDDL'],
     'Embodied': ['AlfWorld', 'ScienceWorld', 'BabyAI'],
@@ -313,9 +353,13 @@ function createMainResultChart() {
                             
                             let method = context.label;  // 获取当前悬停的method名称
                             let modules = methodModulesMapping[method];  // 获取对应的模块信息
+
+                            if (method === 'AgentSquare'){
+
+                                
+                            }
                 
-                            // 生成每个模块的提示内容
-                            let tooltipText = `Planning: ${modules.planning}<br>Reasoning: ${modules.reasoning}<br>Tooluse: ${modules.tooluse}<br>Memory: ${modules.memory}`;
+                            let tooltipText = `Planning: ${modules.planning}\nReasoning: ${modules.reasoning}\nTooluse: ${modules.tooluse}\nMemory: ${modules.memory}`;
                 
                             return tooltipText;  // 返回生成的提示文本
                         }
